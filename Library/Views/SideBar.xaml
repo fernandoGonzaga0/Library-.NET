@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="Library.Views.SideBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Library.Views"
+             xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+             mc:Ignorable="d" 
+             d:DesignHeight="740" d:DesignWidth="250">
+
+    <Border>
+
+        <!--Estilo da coluna-->
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0.5, 0" EndPoint="0.5, 1">
+                <GradientStop Color="#40534C" Offset="0"/>
+                <GradientStop Color="#1A3636" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.Background>
+
+        <!--StackPanel 0-->
+        <StackPanel>
+
+            <!--Logo-->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 25 0 0">
+                <Border CornerRadius="10" Width="40" Height="40">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1, 2">
+                            <GradientStop Color="#D6BD98" Offset="0"/>
+                            <GradientStop Color="#fff" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <TextBlock Text="FG" FontSize="25" TextAlignment="Center" VerticalAlignment="Center" 
+                               FontFamily="Candara" Foreground="#3C2A21" FontWeight="SemiBold" Margin="3 0 0 2"/>
+                </Border>
+
+            </StackPanel>
+
+            <Separator Height="0.8" Margin="20 30" Background="#D6BD98"/>
+
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                <!--Botão Favorites-->
+                <Button Width="250" Margin="0 150 0 0" BorderThickness="0" Background="#D6BD98" Padding="10">
+                    <StackPanel Orientation="Horizontal">
+                        <Border>
+                            <TextBlock Text="Favorites" FontFamily="Candara" Foreground="#3C2A21" FontWeight="SemiBold" FontSize="25"/>
+                        </Border>
+                        <fa:IconImage Icon="HeartCircleCheck" Width="40" Height="30" Foreground="#3C2A21" Margin="10 0 0 0"/>
+                    </StackPanel>
+                </Button>
+
+                <!--Botão Already Read-->
+                <Button Width="auto" Margin="0 70 0 0" BorderThickness="0" Background="#D6BD98" Padding="10">
+                    <StackPanel Orientation="Horizontal">
+                        <Border>
+                            <TextBlock Text="Already Read" FontFamily="Candara" Foreground="#3C2A21" FontWeight="SemiBold" FontSize="25"/>
+                        </Border>
+                        <fa:IconImage Icon="CheckToSlot" Width="40" Height="30" Foreground="#3C2A21" Margin="10 0 0 0"/>
+                    </StackPanel>
+                </Button>
+
+                <!--Footer SideBar-->
+                <StackPanel Margin="40 260 40 0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="@fernandoDev" FontFamily="Candara" Foreground="#D6BD98" FontSize="10"/>
+                </StackPanel>
+
+            </StackPanel>
+
+        </StackPanel>
+
+    </Border>
+</UserControl>

@@ -1,0 +1,26 @@
+﻿Estou criando um projeto em .NET usando C# e WPF, o arquivo é WPF Application. A ideia principal é ser um programa semelhante a uma livraria, onde eu tenha essas funcionalidades inseridas na imagem anexada nessa pasta Notes. Nesse projeto, quero aprofundar meus conhecimentos na estrutura de projeto MVVM, reforçando também a aplicação de fundamentos no C# na prática.
+
+Usarei MVVM para separar claramente os dados (Model), lógica e estado (ViewModel) e apresentação (View). Utilizarei  bindings, comandos e templates para manter a UI desacoplada e testável.
+
+Estrutura:
+
+/Data (dados)
+	books_cleaned.csv
+
+/Models (apenas propriedades e validações de domínio, sem lógica de UI)
+	Livro.cs 
+
+/Services (abstrai I/O e parsing do csv, devo retornar IEnumerable<Livro> para permitir testes e async)
+	LivroService.cs
+
+/ViewModels (expõe ObservableCollection<LivroViewModel>, propriedades de filtro/ordenação e lógica de transformação dos dados)
+	MainViewModel.cs
+	LivroViewModel.cs
+
+/Views (XAML com bindings, DataTemplates, Styles e Triggers, code-behind apenas para inicialização e manipulações estritamente visuais)
+	MainWindow.xaml + MainWindow.xaml.cs (apenas code-behind mínimo)
+	LivroItemControl.xaml (DataTemplate ou UserControl para cada livro)
+	FavoritesView.xaml, ReadView.xaml
+
+/Resources
+	Temas, imagens, estilos se necessário.

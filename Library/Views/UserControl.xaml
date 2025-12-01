@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="Library.Views.UserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Library.Views"
+             xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+             mc:Ignorable="d" 
+             d:DesignHeight="70" d:DesignWidth="1030" Background="Transparent">
+    
+        
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+        <Button x:Name="btnMinimize" Width="40" Height="40" Background="Transparent" BorderBrush="Transparent" Click="btnMinimize_Click" Margin="0 0 10 0">
+            <fa:IconImage Icon="WindowMinimize" Foreground="#D6BD98"/>
+        </Button>
+        <Button x:Name="btnMaximize" Width="40" Height="40" Background="Transparent" BorderBrush="Transparent" Click="btnMaximize_Click" Margin="0 0 10 0">
+            <fa:IconImage Icon="WindowMaximize" Foreground="#D6BD98"/>
+        </Button>
+        <Button x:Name="btnClose" Width="40" Height="40" Background="Transparent" BorderBrush="Transparent" Click="btnClose_Click" Margin="0 0 10 0">
+            <fa:IconImage Icon="WindowClose" Foreground="#D6BD98"/>
+        </Button>
+    </StackPanel>
+        
+   
+    
+</UserControl>

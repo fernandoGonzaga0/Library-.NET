@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="Library.Views.MainMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Library.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="740" d:DesignWidth="1030" Background="Transparent">
+
+    <Border CornerRadius="10 0 0 10">
+
+        <!--Background MainMenu-->
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#40534C" Offset="0"/>
+                <GradientStop Color="#1A3636" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.Background>
+
+        <!--4 linhas designadas-->
+
+    </Border>
+   
+</UserControl>

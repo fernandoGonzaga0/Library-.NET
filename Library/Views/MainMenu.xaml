@@ -3,22 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Library.Views"
+             xmlns:views="clr-namespace:Library.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="740" d:DesignWidth="1030" Background="Transparent">
+             d:DesignHeight="740" d:DesignWidth="1030">
 
-    <Border CornerRadius="10 0 0 10">
+    <Grid>
 
         <!--Background MainMenu-->
-        <Border.Background>
+        <Grid.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                 <GradientStop Color="#40534C" Offset="0"/>
                 <GradientStop Color="#1A3636" Offset="1"/>
             </LinearGradientBrush>
-        </Border.Background>
+        </Grid.Background>
 
         <!--4 linhas designadas-->
+        <Grid>
 
-    </Border>
-   
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+
+            <views:WindowsButtons Grid.Row="0"/>
+
+            <views:SearchOrder Grid.Row="1"/>
+
+        </Grid>
+
+    </Grid>
+
 </UserControl>

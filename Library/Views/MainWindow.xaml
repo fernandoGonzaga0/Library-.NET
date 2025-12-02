@@ -5,9 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Library"
         xmlns:userControls="clr-namespace:Library.Views"
+        xmlns:views="clr-namespace:Library.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="740" Width="1280"
-        WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" Background="Transparent">
+        Title="MainWindow"
+        WindowStartupLocation="CenterScreen" WindowStyle="None" 
+        AllowsTransparency="True" Background="Transparent"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown">
 
 
     <!--Retirando espaços brancos restantes na barra inicial-->
@@ -20,14 +23,15 @@
         <!--Colunas-->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250"/>
-            <ColumnDefinition Width="1030"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <!--Coluna 0 (SideBar)-->
-        <userControls:SideBar Grid.Column="0"/>
-
-        <userControls:MainMenu Grid.Column="1"/>
-
+        
+        <views:SideBar Grid.Column="0"/>
+        
+        <views:MainMenu Grid.Column="1"/>
+        
     </Grid>
 
 </Window>

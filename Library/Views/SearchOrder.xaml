@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="Library.Views.SearchOrder"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Library.Views"
+             xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+             mc:Ignorable="d" 
+             MinHeight="100" MinWidth="1030">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Input e botão OK-->
+        <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Left">
+            
+            <TextBox Height="50" Width="350" Margin="30 0 0 0"
+                    FontWeight="ExtraLight" BorderThickness="0" FontSize="15"
+                    Background="#F3E8DF" Foreground="#57595B"/>
+            
+            <Button Width="50" Height="50" Content="OK" FontFamily="Cascadia Mono" FontSize="20"
+                    Background="#57595B" Foreground="#F3E8DF" BorderThickness="0" x:Name="Ok_Button" Click="Ok_Button_Click"/>  
+            
+        </StackPanel>
+
+        <!--OrderBy e botão OrderBy_Button-->
+
+        
+        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            
+            <TextBox Height="50" Width="150" 
+                     FontFamily="Cascadia Mono" FontSize="20" Text="OrderBy" BorderThickness="0"
+                     VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
+                     Background="Transparent" Foreground="#F3E8DF"/>
+            
+            <Button Height="40" Margin="0 0 30 0" 
+                    HorizontalAlignment="Center"
+                    Background="Transparent"  BorderThickness="0"
+                    x:Name="OrderBy_Button" Click="OrderBy_Button_Click">
+                <fa:IconImage Icon="Filter" Foreground="#F3E8DF" Height="20"/>
+            </Button>
+            
+        </StackPanel>
+        
+        
+    </Grid>
+    
+</UserControl>

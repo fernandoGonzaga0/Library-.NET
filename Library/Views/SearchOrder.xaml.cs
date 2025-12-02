@@ -14,26 +14,21 @@ using System.Windows.Shapes;
 namespace Library.Views
 {
     /// <summary>
-    /// Interaction logic for UserControl.xaml
+    /// Interaction logic for SearchOrder.xaml
     /// </summary>
-    public partial class UserControl : UserControl
+    public partial class SearchOrder : UserControl
     {
-        public UserControl()
+        public SearchOrder()
         {
             InitializeComponent();
         }
 
-        private void btnMinimize_Click(object sender, RoutedEventArgs e)
+        private void OrderBy_Button_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void btnMaximize_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnClose_Click(object sender, RoutedEventArgs e)
+        private void Ok_Button_Click(object sender, RoutedEventArgs e)
         {
 
         }

@@ -24,3 +24,7 @@ Estrutura:
 
 /Resources
 	Temas, imagens, estilos se necessário.
+
+
+
+Conceito de scroll infinito -> a ideia é ter um espaço inicial de 10 posições para exibição dos livros, mas não quer dizer que irei criar de fato 10 espaços no xaml. Em vez disso, usarei o controle de lista (ItemsControl) que repete automaticamente um template visual para cada item da coleção de livros. 

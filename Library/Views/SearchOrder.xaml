@@ -27,7 +27,6 @@
         </StackPanel>
 
         <!--OrderBy e botão OrderBy_Button-->
-
         
         <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
             

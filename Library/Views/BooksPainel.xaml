@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="Library.Views.BooksPainel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Library.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="520" d:DesignWidth="1030">
+
+    <ListView ItemsSource="{Binding BooksCollection}" Background="Transparent">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <Image Source="{Binding Thumbnail}" Width="60" Height="90" Margin="0 0 10 0"/>
+                    <TextBlock Text="{Binding Title}" FontWeight="Bold" FontSize="16"/>
+                    <TextBlock Text="{Binding Author}" FontStyle="Italic"/>
+                    <TextBlock Text="{Binding Category}" Foreground="Gray"/>
+                    <TextBlock Text="{Binding YearPublished}" Foreground="DarkSlateGray"/>
+                    <TextBlock Text="{Binding NumberOfPages}" Foreground="DarkSlateGray"/>
+                </StackPanel>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    
+    
+</UserControl>

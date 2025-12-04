@@ -14,7 +14,7 @@
         <Border.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="3,0">
                 <GradientStop Color="#181C14" Offset="0"/>
-                <GradientStop Color="#F3E8DF" Offset="1"/>
+                <GradientStop Color="#181C14" Offset="1"/>
             </LinearGradientBrush>
         </Border.Background>
 
@@ -62,7 +62,7 @@
 
                 <!--Footer SideBar-->
                 <StackPanel Margin="40 260 40 0" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <TextBlock Text="@fernandoDev" FontFamily="Candara" Foreground="#452829" FontSize="15"/>
+                    <TextBlock Text="@fernandoDev" FontFamily="Candara" Foreground="#F3E8DF" FontSize="15"/>
                 </StackPanel>
 
             </StackPanel>

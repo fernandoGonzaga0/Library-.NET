@@ -23,14 +23,13 @@ namespace Library.Views
             InitializeComponent();
         }
 
-        private void OrderBy_Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void Ok_Button_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+        private void OrderByButton_Click(object sender, RoutedEventArgs e)
+        {
+            OrderByButton.ContextMenu.IsOpen = true;
         }
     }
 }

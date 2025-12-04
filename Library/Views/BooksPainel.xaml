@@ -22,7 +22,7 @@
 
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Border BorderBrush="#E8D1C5" BorderThickness="0" Margin="5" Padding="10" Width="180" Height="250">
+                    <Border BorderBrush="#E8D1C5" BorderThickness="0" Margin="5" Padding="10" Width="170" Height="250">
                         
                         <Border.Background>
                             <LinearGradientBrush StartPoint="0,0" EndPoint="1, 1">

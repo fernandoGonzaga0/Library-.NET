@@ -3,24 +3,48 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Library.Views"
+             xmlns:vm="clr-namespace:Library.ViewModel"
              mc:Ignorable="d" 
+             d:DataContext="{d:DesignInstance Type=vm:BooksViewModel, IsDesignTimeCreatable=True}"
              d:DesignHeight="520" d:DesignWidth="1030">
 
-    <ListView ItemsSource="{Binding BooksCollection}" Background="Transparent">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <StackPanel Orientation="Horizontal" Margin="10">
-                    <Image Source="{Binding Thumbnail}" Width="60" Height="90" Margin="0 0 10 0"/>
-                    <TextBlock Text="{Binding Title}" FontWeight="Bold" FontSize="16"/>
-                    <TextBlock Text="{Binding Author}" FontStyle="Italic"/>
-                    <TextBlock Text="{Binding Category}" Foreground="Gray"/>
-                    <TextBlock Text="{Binding YearPublished}" Foreground="DarkSlateGray"/>
-                    <TextBlock Text="{Binding NumberOfPages}" Foreground="DarkSlateGray"/>
-                </StackPanel>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
-    
-    
+    <Grid>
+
+        <ListView ItemsSource="{Binding BooksCollection}" ScrollViewer.ScrollChanged="ListView_ScrollChanged" 
+                  Background="Transparent" BorderThickness="0"
+                  VerticalAlignment="Center" Margin="30 0 0 30">
+
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Columns="5"/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="#E8D1C5" BorderThickness="0" Margin="5" Padding="10" Width="180" Height="250">
+                        
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1, 1">
+                                <GradientStop Color="#57595B" Offset="0"/>
+                                <GradientStop Color="#E8D1C5" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        
+                        <StackPanel Orientation="Vertical" Margin="10">
+                            <Image Source="{Binding Thumbnail}" Width="100" Height="150" Margin="0 0 0 5"/>
+                            <TextBlock Text="{Binding Title}" FontWeight="Bold" FontSize="16"/>
+                            <TextBlock Text="{Binding Author}" FontStyle="Italic"/>
+                            <TextBlock Text="{Binding Category}" Foreground="#E8D1C5"/>
+                            <TextBlock Text="{Binding YearPublished}" Foreground="#57595B"/>
+                            <TextBlock Text="{Binding NumberOfPages}" Foreground="#57595B"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+
+    </Grid>
+
 </UserControl>

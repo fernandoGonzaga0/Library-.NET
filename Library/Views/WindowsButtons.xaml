@@ -11,7 +11,7 @@
     <StackPanel>
 
         <!--Buttons-->
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Height="30">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Height="30" Margin="0 5 30 0">
             <Button x:Name="btnMinimize" Width="25" Height="25" Background="Transparent" BorderBrush="Transparent" Click="btnMinimize_Click" Margin="0 0 10 0">
                 <fa:IconImage Icon="WindowMinimize" Foreground="#E8D1C5"/>
             </Button>
@@ -25,7 +25,6 @@
         
         <!--Title-->
         <TextBlock FontFamily="Cascadia Mono" Foreground="#F1F0E4" FontSize="30" HorizontalAlignment="Center">Library</TextBlock>
-        
         
     </StackPanel>
     

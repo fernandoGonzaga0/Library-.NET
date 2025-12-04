@@ -8,13 +8,13 @@
              mc:Ignorable="d" 
              d:DesignHeight="740" d:DesignWidth="250">
 
-    <Border>
+    <Border CornerRadius="40 0 0 40">
 
         <!--Estilo da coluna-->
         <Border.Background>
-            <LinearGradientBrush StartPoint="0.5, 0" EndPoint="0.5, 1">
-                <GradientStop Color="#40534C" Offset="0"/>
-                <GradientStop Color="#1A3636" Offset="1"/>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="3,0">
+                <GradientStop Color="#181C14" Offset="0"/>
+                <GradientStop Color="#F3E8DF" Offset="1"/>
             </LinearGradientBrush>
         </Border.Background>
 
@@ -41,28 +41,28 @@
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
 
                 <!--Botão Favorites-->
-                <Button Width="250" Margin="0 150 0 0" BorderThickness="0" Background="#D6BD98" Padding="10">
+                <Button Width="250" Margin="0 150 0 0" BorderThickness="0" Background="#57595B" Padding="10">
                     <StackPanel Orientation="Horizontal">
                         <Border>
-                            <TextBlock Text="Favorites" FontFamily="Candara" Foreground="#3C2A21" FontWeight="SemiBold" FontSize="25"/>
+                            <TextBlock Text="Favorites" FontFamily="Candara" Foreground="#F3E8DF" FontWeight="SemiBold" FontSize="25"/>
                         </Border>
-                        <fa:IconImage Icon="HeartCircleCheck" Width="40" Height="30" Foreground="#3C2A21" Margin="10 0 0 0"/>
+                        <fa:IconImage Icon="HeartCircleCheck" Width="40" Height="20" Foreground="#F3E8DF" Margin="10 0 0 0"/>
                     </StackPanel>
                 </Button>
 
                 <!--Botão Already Read-->
-                <Button Width="auto" Margin="0 70 0 0" BorderThickness="0" Background="#D6BD98" Padding="10">
+                <Button Width="auto" Margin="0 70 0 0" BorderThickness="0" Background="#57595B" Padding="10">
                     <StackPanel Orientation="Horizontal">
                         <Border>
-                            <TextBlock Text="Already Read" FontFamily="Candara" Foreground="#3C2A21" FontWeight="SemiBold" FontSize="25"/>
+                            <TextBlock Text="Already Read" FontFamily="Candara" Foreground="#F3E8DF" FontWeight="SemiBold" FontSize="25"/>
                         </Border>
-                        <fa:IconImage Icon="CheckToSlot" Width="40" Height="30" Foreground="#3C2A21" Margin="10 0 0 0"/>
+                        <fa:IconImage Icon="CheckToSlot" Width="40" Height="20" Foreground="#F3E8DF" Margin="10 0 0 0"/>
                     </StackPanel>
                 </Button>
 
                 <!--Footer SideBar-->
                 <StackPanel Margin="40 260 40 0" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <TextBlock Text="@fernandoDev" FontFamily="Candara" Foreground="#D6BD98" FontSize="10"/>
+                    <TextBlock Text="@fernandoDev" FontFamily="Candara" Foreground="#452829" FontSize="15"/>
                 </StackPanel>
 
             </StackPanel>

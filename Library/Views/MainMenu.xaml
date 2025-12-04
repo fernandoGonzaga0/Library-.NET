@@ -7,15 +7,15 @@
              mc:Ignorable="d" 
              d:DesignHeight="740" d:DesignWidth="1030">
 
-    <Grid>
+    <Border CornerRadius="0 40 40 0">
 
         <!--Background MainMenu-->
-        <Grid.Background>
-            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                <GradientStop Color="#40534C" Offset="0"/>
-                <GradientStop Color="#1A3636" Offset="1"/>
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,1" EndPoint="1,2">
+                <GradientStop Color="#181C14" Offset="0"/>
+                <GradientStop Color="#F3E8DF" Offset="1"/>
             </LinearGradientBrush>
-        </Grid.Background>
+        </Border.Background>
 
         <!--4 linhas designadas-->
         <Grid>
@@ -35,6 +35,6 @@
 
         </Grid>
 
-    </Grid>
+    </Border>
 
 </UserControl>

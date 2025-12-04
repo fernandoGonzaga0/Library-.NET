@@ -8,10 +8,10 @@
         xmlns:views="clr-namespace:Library.Views"
         mc:Ignorable="d"
         Title="MainWindow"
+        Width="1280" Height="740"
         WindowStartupLocation="CenterScreen" WindowStyle="None" 
         AllowsTransparency="True" Background="Transparent"
         MouseLeftButtonDown="Window_MouseLeftButtonDown">
-
 
     <!--Retirando espaços brancos restantes na barra inicial-->
     <WindowChrome.WindowChrome>

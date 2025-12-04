@@ -28,7 +28,7 @@
 
         <!--OrderBy e botão OrderBy_Button-->
         
-        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 0 30 0">
             
             <TextBox Height="50" Width="150" 
                      FontFamily="Cascadia Mono" FontSize="20" Text="OrderBy" BorderThickness="0"

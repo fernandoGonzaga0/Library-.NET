@@ -10,7 +10,7 @@ namespace BookServiceNamespace
     public class BookService
     {
         // fazendo com que o programa procure o arquivo books.csv 
-        // ** para fazer com que o arquivo seja encontrado, clicar com o botão direito o csv e seguir Properties -> Copy to Output Directory -> Copy if newer
+        // * para fazer com que o arquivo seja encontrado, clicar com o botão direito o csv e seguir Properties -> Copy to Output Directory -> Copy if newer
         private readonly string _filePath = Path.Combine(AppContext.BaseDirectory, "Data", "books_cleaned.csv");
         public List<Books> LoadBooks() // método que será chamado pelo ViewModel posteriormente
         {

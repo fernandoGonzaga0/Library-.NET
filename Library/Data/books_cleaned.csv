@@ -59,3 +59,339 @@ id;title;author;category;thumbnail;published_year;number_of_pages
 58;O Pequeno Príncipe;Antoine de Saint-Exupéry;Fábula;https://m.media-amazon.com/images/I/81TmOZIXvzL._AC_UF1000,1000_QL80_.jpg;1943;96
 59;A Cor Púrpura;Alice Walker;Ficção;https://m.media-amazon.com/images/I/719J3+g-GuL.jpg;1982;294
 60;A Vida de Pi;Yann Martel;Aventura;https://m.media-amazon.com/images/I/51xUioCry4L._AC_UF1000,1000_QL80_.jpg;2001;460
+61;1984;George Orwell;Distopia;https://covers.openlibrary.org/b/isbn/9780451524935-M.jpg;1949;328
+62;Fahrenheit 451;Ray Bradbury;Distopia;https://covers.openlibrary.org/b/isbn/9781451673319-M.jpg;1953;208
+63;Admirável Mundo Novo;Aldous Huxley;Distopia;https://covers.openlibrary.org/b/isbn/9780060850524-M.jpg;1932;288
+64;A Revolução dos Bichos;George Orwell;Sátira;https://covers.openlibrary.org/b/isbn/9780451526342-M.jpg;1945;152
+65;O Sol é Para Todos;Harper Lee;Ficção;https://covers.openlibrary.org/b/isbn/9780061120084-M.jpg;1960;336
+66;O Apanhador no Campo de Centeio;J.D. Salinger;Ficção;https://covers.openlibrary.org/b/isbn/9780316769488-M.jpg;1951;277
+67;O Grande Gatsby;F. Scott Fitzgerald;Ficção;https://covers.openlibrary.org/b/isbn/9780743273565-M.jpg;1925;200
+68;Moby Dick;Herman Melville;Aventura;https://covers.openlibrary.org/b/isbn/9781503280786-M.jpg;1851;585
+69;O Morro dos Ventos Uivantes;Emily Brontë;Romance;https://covers.openlibrary.org/b/isbn/9780141439556-M.jpg;1847;416
+70;Frankenstein;Mary Shelley;Terror;https://covers.openlibrary.org/b/isbn/9780486282114-M.jpg;1818;280
+71;Drácula;Bram Stoker;Terror;https://covers.openlibrary.org/b/isbn/9780486411095-M.jpg;1897;488
+72;Jane Eyre;Charlotte Brontë;Romance;https://covers.openlibrary.org/b/isbn/9780141441146-M.jpg;1847;532
+73;Orgulho e Preconceito;Jane Austen;Romance;https://covers.openlibrary.org/b/isbn/9780141439518-M.jpg;1813;432
+74;Emma;Jane Austen;Romance;https://covers.openlibrary.org/b/isbn/9780141439587-M.jpg;1815;544
+75;Razão e Sensibilidade;Jane Austen;Romance;https://covers.openlibrary.org/b/isbn/9780141439662-M.jpg;1811;409
+76;O Conde de Monte Cristo;Alexandre Dumas;Aventura;https://covers.openlibrary.org/b/isbn/9780140449266-M.jpg;1844;1276
+77;Os Três Mosqueteiros;Alexandre Dumas;Aventura;https://covers.openlibrary.org/b/isbn/9780140449266-M.jpg;1844;704
+78;Guerra e Paz;Leon Tolstói;Histórico;https://covers.openlibrary.org/b/isbn/9781400079988-M.jpg;1869;1296
+79;Anna Kariênina;Leon Tolstói;Romance;https://covers.openlibrary.org/b/isbn/9780143035008-M.jpg;1877;864
+80;Crime e Castigo;Fiódor Dostoiévski;Ficção;https://covers.openlibrary.org/b/isbn/9780143058144-M.jpg;1866;671
+81;Os Irmãos Karamázov;Fiódor Dostoiévski;Filosofia;https://covers.openlibrary.org/b/isbn/9780374528379-M.jpg;1880;824
+82;O Idiota;Fiódor Dostoiévski;Ficção;https://covers.openlibrary.org/b/isbn/9780140447927-M.jpg;1869;667
+83;A Ilíada;Homero;Épico;https://covers.openlibrary.org/b/isbn/9780140445923-M.jpg;-800;704
+84;A Odisseia;Homero;Épico;https://covers.openlibrary.org/b/isbn/9780140268867-M.jpg;-700;560
+85;Metamorfose;Franz Kafka;Ficção;https://covers.openlibrary.org/b/isbn/9780553213690-M.jpg;1915;201
+86;O Processo;Franz Kafka;Ficção;https://covers.openlibrary.org/b/isbn/9780805210408-M.jpg;1925;304
+87;O Castelo;Franz Kafka;Ficção;https://covers.openlibrary.org/b/isbn/9780805211061-M.jpg;1926;352
+88;O Estrangeiro;Albert Camus;Filosofia;https://covers.openlibrary.org/b/isbn/9780679720201-M.jpg;1942;123
+89;A Peste;Albert Camus;Filosofia;https://covers.openlibrary.org/b/isbn/9780679720218-M.jpg;1947;320
+90;O Pequeno Príncipe (edição alternativa);Antoine de Saint-Exupéry;Fábula;https://covers.openlibrary.org/b/isbn/9780156012195-M.jpg;1943;96
+91;Os Miseráveis;Victor Hugo;Romance;https://covers.openlibrary.org/b/isbn/9780451419439-M.jpg;1862;1488
+92;O Corcunda de Notre-Dame;Victor Hugo;Romance;https://covers.openlibrary.org/b/isbn/9780451419439-M.jpg;1831;940
+93;A Divina Comédia;Dante Alighieri;Poesia;https://covers.openlibrary.org/b/isbn/9780140448955-M.jpg;1320;798
+94;O Nome do Vento;Patrick Rothfuss;Fantasia;https://covers.openlibrary.org/b/isbn/9780756404741-M.jpg;2007;662
+95;O Temor do Sábio;Patrick Rothfuss;Fantasia;https://covers.openlibrary.org/b/isbn/9780756404734-M.jpg;2011;1120
+96;Duna;Frank Herbert;Ficção Científica;https://covers.openlibrary.org/b/isbn/9780441172719-M.jpg;1965;896
+97;Neuromancer;William Gibson;Cyberpunk;https://covers.openlibrary.org/b/isbn/9780441569595-M.jpg;1984;288
+98;Fundação;Isaac Asimov;Ficção Científica;https://covers.openlibrary.org/b/isbn/9780553293357-M.jpg;1951;296
+99;Eu, Robô;Isaac Asimov;Ficção Científica;https://covers.openlibrary.org/b/isbn/9780553803709-M.jpg;1950;253
+100;O Jogo do Exterminador (Ender’s Game);Orson Scott Card;Ficção Científica;https://covers.openlibrary.org/b/isbn/9780812550702-M.jpg;1985;352
+101;A Cor da Magia;Terry Pratchett;Fantasia;https://covers.openlibrary.org/b/isbn/9780062225672-M.jpg;1983;228
+102;American Gods;Neil Gaiman;Fantasia;https://covers.openlibrary.org/b/isbn/9780380789030-M.jpg;2001;624
+103;Coraline;Neil Gaiman;Fantasia;https://covers.openlibrary.org/b/isbn/9780380807345-M.jpg;2002;208
+104;O Oceano no Fim do Caminho;Neil Gaiman;Fantasia;https://covers.openlibrary.org/b/isbn/9780062255655-M.jpg;2013;256
+105;O Hobbit (edição alternativa);J.R.R. Tolkien;Fantasia;https://covers.openlibrary.org/b/isbn/9780261102217-M.jpg;1937;310
+110;O Silmarillion;J.R.R. Tolkien;Fantasia;https://covers.openlibrary.org/b/isbn/9780618391110-M.jpg;1977;480
+111;O Senhor das Moscas;William Golding;Ficção;https://covers.openlibrary.org/b/isbn/9780399501487-M.jpg;1954;224
+112;O Som e a Fúria;William Faulkner;Ficção;https://covers.openlibrary.org/b/isbn/9780679732242-M.jpg;1929;326
+113;Enquanto Agonizo;William Faulkner;Ficção;https://covers.openlibrary.org/b/isbn/9780679732259-M.jpg;1930;288
+114;Luz em Agosto;William Faulkner;Ficção;https://covers.openlibrary.org/b/isbn/9780679732266-M.jpg;1932;507
+115;As Vinhas da Ira;John Steinbeck;Drama;https://covers.openlibrary.org/b/isbn/9780143039433-M.jpg;1939;544
+116;Ratos e Homens;John Steinbeck;Drama;https://covers.openlibrary.org/b/isbn/9780140177398-M.jpg;1937;112
+117;A Pérola;John Steinbeck;Drama;https://covers.openlibrary.org/b/isbn/9780140177374-M.jpg;1947;96
+118;O Velho e o Mar;Ernest Hemingway;Aventura;https://covers.openlibrary.org/b/isbn/9780684801223-M.jpg;1952;127
+119;Por Quem os Sinos Dobram;Ernest Hemingway;Ficção;https://covers.openlibrary.org/b/isbn/9780684803357-M.jpg;1940;480
+120;Adeus às Armas;Ernest Hemingway;Ficção;https://covers.openlibrary.org/b/isbn/9780684801469-M.jpg;1929;352
+121;O Sol Também se Levanta;Ernest Hemingway;Ficção;https://covers.openlibrary.org/b/isbn/9780684801520-M.jpg;1926;251
+122;Beloved;Toni Morrison;Drama;https://covers.openlibrary.org/b/isbn/9781400033416-M.jpg;1987;324
+123;Jazz;Toni Morrison;Drama;https://covers.openlibrary.org/b/isbn/9781400033447-M.jpg;1992;229
+124;Song of Solomon;Toni Morrison;Drama;https://covers.openlibrary.org/b/isbn/9781400033423-M.jpg;1977;352
+125;Paraíso;Toni Morrison;Drama;https://covers.openlibrary.org/b/isbn/9781400033430-M.jpg;1997;318
+126;A Letra Escarlate;Nathaniel Hawthorne;Ficção;https://covers.openlibrary.org/b/isbn/9780142437261-M.jpg;1850;272
+127;A Casa dos Sete Telhados;Nathaniel Hawthorne;Ficção;https://covers.openlibrary.org/b/isbn/9780451531698-M.jpg;1851;352
+128;O Retrato de Dorian Gray;Oscar Wilde;Ficção;https://covers.openlibrary.org/b/isbn/9780141442464-M.jpg;1890;304
+129;A Importância de Ser Prudente;Oscar Wilde;Comédia;https://covers.openlibrary.org/b/isbn/9780486264783-M.jpg;1895;76
+130;O Médico e o Monstro;Robert Louis Stevenson;Terror;https://covers.openlibrary.org/b/isbn/9780486266886-M.jpg;1886;144
+131;A Ilha do Tesouro;Robert Louis Stevenson;Aventura;https://covers.openlibrary.org/b/isbn/9780140437683-M.jpg;1883;240
+132;Alice no País das Maravilhas;Lewis Carroll;Fantasia;https://covers.openlibrary.org/b/isbn/9780141439761-M.jpg;1865;192
+133;Através do Espelho;Lewis Carroll;Fantasia;https://covers.openlibrary.org/b/isbn/9780141439761-M.jpg;1871;208
+134;O Cão dos Baskervilles;Arthur Conan Doyle;Mistério;https://covers.openlibrary.org/b/isbn/9780141034324-M.jpg;1902;256
+135;Um Estudo em Vermelho;Arthur Conan Doyle;Mistério;https://covers.openlibrary.org/b/isbn/9780141034348-M.jpg;1887;188
+136;O Signo dos Quatro;Arthur Conan Doyle;Mistério;https://covers.openlibrary.org/b/isbn/9780141034355-M.jpg;1890;160
+137;O Vale do Medo;Arthur Conan Doyle;Mistério;https://covers.openlibrary.org/b/isbn/9780141034362-M.jpg;1915;256
+138;O Fantasma da Ópera;Gaston Leroux;Romance;https://covers.openlibrary.org/b/isbn/9780451529794-M.jpg;1910;288
+139;A Volta ao Mundo em 80 Dias;Jules Verne;Aventura;https://covers.openlibrary.org/b/isbn/9780486411118-M.jpg;1873;254
+140;Vinte Mil Léguas Submarinas;Jules Verne;Aventura;https://covers.openlibrary.org/b/isbn/9780486443096-M.jpg;1870;512
+141;Da Terra à Lua;Jules Verne;Ficção Científica;https://covers.openlibrary.org/b/isbn/9780486440880-M.jpg;1865;208
+142;Viagem ao Centro da Terra;Jules Verne;Aventura;https://covers.openlibrary.org/b/isbn/9780486440880-M.jpg;1864;304
+143;O Homem Invisível;H.G. Wells;Ficção Científica;https://covers.openlibrary.org/b/isbn/9780486295084-M.jpg;1897;176
+144;A Máquina do Tempo;H.G. Wells;Ficção Científica;https://covers.openlibrary.org/b/isbn/9780486284729-M.jpg;1895;160
+145;A Guerra dos Mundos;H.G. Wells;Ficção Científica;https://covers.openlibrary.org/b/isbn/9780486295060-M.jpg;1898;288
+146;O Dia das Trífides;John Wyndham;Ficção Científica;https://covers.openlibrary.org/b/isbn/9780812978529-M.jpg;1951;304
+147;A Mão Esquerda da Escuridão;Ursula K. Le Guin;Ficção Científica;https://covers.openlibrary.org/b/isbn/9780441478125-M.jpg;1969;304
+148;Os Despossuídos;Ursula K. Le Guin;Ficção Científica;https://covers.openlibrary.org/b/isbn/9780060512750-M.jpg;1974;400
+149;A Roda do Tempo – O Olho do Mundo;Robert Jordan;Fantasia;https://covers.openlibrary.org/b/isbn/9780812511818-M.jpg;1990;782
+150;A Roda do Tempo – A Grande Caçada;Robert Jordan;Fantasia;https://covers.openlibrary.org/b/isbn/9780812517728-M.jpg;1990;705
+151;A Roda do Tempo – O Dragão Renascido;Robert Jordan;Fantasia;https://covers.openlibrary.org/b/isbn/9780812513713-M.jpg;1991;624
+152;A Roda do Tempo – A Sombra Alastrante;Robert Jordan;Fantasia;https://covers.openlibrary.org/b/isbn/9780812513737-M.jpg;1992;672
+153;A História Sem Fim;Michael Ende;Fantasia;https://covers.openlibrary.org/b/isbn/9780525457584-M.jpg;1979;448
+154;A Menina que Roubava Livros;Markus Zusak;Drama;https://covers.openlibrary.org/b/isbn/9780375842207-M.jpg;2005;552
+155;O Caçador de Pipas;Khaled Hosseini;Drama;https://covers.openlibrary.org/b/isbn/9781594480003-M.jpg;2003;372
+156;A Cidade do Sol;Khaled Hosseini;Drama;https://covers.openlibrary.org/b/isbn/9781594483073-M.jpg;2007;372
+157;Mil Sóis Esplêndidos;Khaled Hosseini;Drama;https://covers.openlibrary.org/b/isbn/9780747582971-M.jpg;2007;432
+158;A Sombra do Vento;Carlos Ruiz Zafón;Mistério;https://covers.openlibrary.org/b/isbn/9780143034902-M.jpg;2001;565
+159;O Jogo do Anjo;Carlos Ruiz Zafón;Mistério;https://covers.openlibrary.org/b/isbn/9788408079545-M.jpg;2008;672
+160;Marina;Carlos Ruiz Zafón;Mistério;https://covers.openlibrary.org/b/isbn/9788408061533-M.jpg;1999;296
+161;O Cemitério dos Livros Esquecidos;Carlos Ruiz Zafón;Mistério;https://covers.openlibrary.org/b/isbn/9788408171386-M.jpg;2016;925
+162;O Menino do Pijama Listrado;John Boyne;Drama;https://covers.openlibrary.org/b/isbn/9780385751063-M.jpg;2006;224
+163;A Lista de Schindler;Thomas Keneally;Histórico;https://covers.openlibrary.org/b/isbn/9780671880310-M.jpg;1982;400
+164;O Pintassilgo;Donna Tartt;Ficção;https://covers.openlibrary.org/b/isbn/9780316055437-M.jpg;2013;784
+165;A Amiga Genial;Elena Ferrante;Drama;https://covers.openlibrary.org/b/isbn/9781609450786-M.jpg;2011;336
+166;A História do Novo Sobrenome;Elena Ferrante;Drama;https://covers.openlibrary.org/b/isbn/9781609451349-M.jpg;2012;471
+167;A Sombra do Amor;Elena Ferrante;Drama;https://covers.openlibrary.org/b/isbn/9781609452339-M.jpg;2013;418
+168;A História da Menina Perdida;Elena Ferrante;Drama;https://covers.openlibrary.org/b/isbn/9781609452865-M.jpg;2014;480
+169;A Vida de Lazarillo de Tormes;Anónimo;Clássico;https://covers.openlibrary.org/b/isbn/9780140440997-M.jpg;1554;176
+170;Dom Quixote;Miguel de Cervantes;Clássico;https://covers.openlibrary.org/b/isbn/9780060934347-M.jpg;1605;992
+171;O Guarani;José de Alencar;Clássico;https://covers.openlibrary.org/b/isbn/9788525401850-M.jpg;1857;352
+172;Iracema;José de Alencar;Clássico;https://covers.openlibrary.org/b/isbn/9788506074488-M.jpg;1865;160
+173;Senhora;José de Alencar;Clássico;https://covers.openlibrary.org/b/isbn/9788506074495-M.jpg;1875;240
+174;Vidas Secas;Graciliano Ramos;Clássico;https://covers.openlibrary.org/b/isbn/9788503010304-M.jpg;1938;175
+175;São Bernardo;Graciliano Ramos;Clássico;https://covers.openlibrary.org/b/isbn/9788503010311-M.jpg;1934;208
+176;O Quinze;Rachel de Queiroz;Clássico;https://covers.openlibrary.org/b/isbn/9788535900405-M.jpg;1930;208
+177;Memórias Póstumas de Brás Cubas;Machado de Assis;Clássico;https://covers.openlibrary.org/b/isbn/9788520925566-M.jpg;1881;208
+178;Dom Casmurro;Machado de Assis;Clássico;https://covers.openlibrary.org/b/isbn/9788520925559-M.jpg;1899;256
+179;Quincas Borba;Machado de Assis;Clássico;https://covers.openlibrary.org/b/isbn/9788520925597-M.jpg;1891;288
+180;O Alienista;Machado de Assis;Clássico;https://covers.openlibrary.org/b/isbn/9788520925580-M.jpg;1882;96
+181;Capitães da Areia;Jorge Amado;Clássico;https://covers.openlibrary.org/b/isbn/9788520930751-M.jpg;1937;280
+182;Dona Flor e Seus Dois Maridos;Jorge Amado;Clássico;https://covers.openlibrary.org/b/isbn/9788520930782-M.jpg;1966;512
+183;Gabriela, Cravo e Canela;Jorge Amado;Clássico;https://covers.openlibrary.org/b/isbn/9788520930768-M.jpg;1958;448
+184;Tieta do Agreste;Jorge Amado;Clássico;https://covers.openlibrary.org/b/isbn/9788520930775-M.jpg;1977;650
+185;O Ateneu;Raul Pompeia;Clássico;https://covers.openlibrary.org/b/isbn/9788535902454-M.jpg;1888;240
+186;Corte de Espinhos e Rosas;Sarah J. Maas;Fantasia;https://covers.openlibrary.org/b/isbn/9781619635180-M.jpg;2015;419
+187;Corte de Névoa e Fúria;Sarah J. Maas;Fantasia;https://covers.openlibrary.org/b/isbn/9781619635197-M.jpg;2016;626
+188;Corte de Asas e Ruína;Sarah J. Maas;Fantasia;https://covers.openlibrary.org/b/isbn/9781619635203-M.jpg;2017;699
+189;Trono de Vidro;Sarah J. Maas;Fantasia;https://covers.openlibrary.org/b/isbn/9781619630345-M.jpg;2012;432
+190;Coroa da Meia-Noite;Sarah J. Maas;Fantasia;https://covers.openlibrary.org/b/isbn/9781619630642-M.jpg;2013;432
+191;Herdeira do Fogo;Sarah J. Maas;Fantasia;https://covers.openlibrary.org/b/isbn/9781619630659-M.jpg;2014;576
+192;Rainha das Sombras;Sarah J. Maas;Fantasia;https://covers.openlibrary.org/b/isbn/9781619630673-M.jpg;2015;648
+193;Tormenta de Espadas;George R.R. Martin;Fantasia;https://covers.openlibrary.org/b/isbn/9780553573428-M.jpg;2000;973
+194;A Fúria dos Reis;George R.R. Martin;Fantasia;https://covers.openlibrary.org/b/isbn/9780553573428-M.jpg;1998;768
+195;O Festim dos Corvos;George R.R. Martin;Fantasia;https://covers.openlibrary.org/b/isbn/9780553582024-M.jpg;2005;753
+196;A Dança dos Dragões;George R.R. Martin;Fantasia;https://covers.openlibrary.org/b/isbn/9780553582017-M.jpg;2011;1120
+197;A Guerra dos Tronos;George R.R. Martin;Fantasia;https://covers.openlibrary.org/b/isbn/9780553573404-M.jpg;1996;694
+198;A Sociedade do Anel;J.R.R. Tolkien;Fantasia;https://covers.openlibrary.org/b/isbn/9780618640157-M.jpg;1954;480
+199;As Duas Torres;J.R.R. Tolkien;Fantasia;https://covers.openlibrary.org/b/isbn/9780618640157-M.jpg;1954;400
+200;O Retorno do Rei;J.R.R. Tolkien;Fantasia;https://covers.openlibrary.org/b/isbn/9780618640157-M.jpg;1955;432
+201;O Conto da Aia;Margaret Atwood;Distopia;https://covers.openlibrary.org/b/isbn/9780385490818-M.jpg;1985;311
+202;Oryx e Crake;Margaret Atwood;Distopia;https://covers.openlibrary.org/b/isbn/9780385721677-M.jpg;2003;400
+203;O Ano do Dilúvio;Margaret Atwood;Distopia;https://covers.openlibrary.org/b/isbn/9780307397980-M.jpg;2009;432
+204;MaddAddam;Margaret Atwood;Distopia;https://covers.openlibrary.org/b/isbn/9780307397997-M.jpg;2013;416
+205;Never Let Me Go;Kazuo Ishiguro;Drama;https://covers.openlibrary.org/b/isbn/9781400078775-M.jpg;2005;288
+206;Os Restos do Dia;Kazuo Ishiguro;Drama;https://covers.openlibrary.org/b/isbn/9780679731720-M.jpg;1989;304
+207;Quando Éramos Órfãos;Kazuo Ishiguro;Drama;https://covers.openlibrary.org/b/isbn/9780375724404-M.jpg;2000;336
+208;Clara e o Sol;Kazuo Ishiguro;Drama;https://covers.openlibrary.org/b/isbn/9780593318171-M.jpg;2021;320
+209;Nunca Me Deixes Ir (edição alternativa);Kazuo Ishiguro;Drama;https://covers.openlibrary.org/b/isbn/9780571224135-M.jpg;2005;288
+210;A Noite das Maldades;Sarah Waters;Mistério;https://covers.openlibrary.org/b/isbn/9781573229728-M.jpg;1999;480
+111;O Homem Invisível;H.G. Wells;Ficção Científica;https://covers.openlibrary.org/b/isbn/9780451531674-M.jpg;1897;192
+112;A Máquina do Tempo;H.G. Wells;Ficção Científica;https://covers.openlibrary.org/b/isbn/9780553213515-M.jpg;1895;128
+113;O Médico e o Monstro;Robert Louis Stevenson;Terror;https://covers.openlibrary.org/b/isbn/9780486266885-M.jpg;1886;144
+114;A Ilha do Tesouro;Robert Louis Stevenson;Aventura;https://covers.openlibrary.org/b/isbn/9780486275597-M.jpg;1883;240
+115;As Aventuras de Tom Sawyer;Mark Twain;Infantojuvenil;https://covers.openlibrary.org/b/isbn/9780486400777-M.jpg;1876;224
+116;As Aventuras de Huckleberry Finn;Mark Twain;Infantojuvenil;https://covers.openlibrary.org/b/isbn/9780486280614-M.jpg;1884;336
+117;Drácula, o Morto-Vivo;Dacre Stoker;Terror;https://covers.openlibrary.org/b/isbn/9780525951292-M.jpg;2009;432
+118;O Retrato de Dorian Gray;Oscar Wilde;Ficção;https://covers.openlibrary.org/b/isbn/9780141442464-M.jpg;1890;304
+119;O Fantasma da Ópera;Gaston Leroux;Mistério;https://covers.openlibrary.org/b/isbn/9780451529794-M.jpg;1910;368
+120;A Letra Escarlate;Nathaniel Hawthorne;Romance;https://covers.openlibrary.org/b/isbn/9780486280485-M.jpg;1850;272
+121;O Chamado de Cthulhu;H.P. Lovecraft;Terror;https://covers.openlibrary.org/b/isbn/9781093204490-M.jpg;1928;96
+122;Nas Montanhas da Loucura;H.P. Lovecraft;Terror;https://covers.openlibrary.org/b/isbn/9780812508086-M.jpg;1936;213
+123;A Sombra de Innsmouth;H.P. Lovecraft;Terror;https://covers.openlibrary.org/b/isbn/9781613798735-M.jpg;1931;140
+124;O Rei de Amarelo;Robert W. Chambers;Terror;https://covers.openlibrary.org/b/isbn/9780486443187-M.jpg;1895;256
+125;O Cão dos Baskervilles;Arthur Conan Doyle;Mistério;https://covers.openlibrary.org/b/isbn/9781505255607-M.jpg;1902;221
+126;Um Estudo em Vermelho;Arthur Conan Doyle;Mistério;https://covers.openlibrary.org/b/isbn/9780486474914-M.jpg;1887;188
+127;O Signo dos Quatro;Arthur Conan Doyle;Mistério;https://covers.openlibrary.org/b/isbn/9780486244692-M.jpg;1890;160
+128;O Vale do Medo;Arthur Conan Doyle;Mistério;https://covers.openlibrary.org/b/isbn/9780486474983-M.jpg;1915;284
+129;Os Filhos de Húrin;J.R.R. Tolkien;Fantasia;https://covers.openlibrary.org/b/isbn/9780618894642-M.jpg;2007;320
+130;Contos Inacabados;J.R.R. Tolkien;Fantasia;https://covers.openlibrary.org/b/isbn/9780395357620-M.jpg;1980;472
+131;O Jardim Secreto;Frances Hodgson Burnett;Infantojuvenil;https://covers.openlibrary.org/b/isbn/9780141321066-M.jpg;1911;304
+132;O Pequeno Lorde;Frances Hodgson Burnett;Infantojuvenil;https://covers.openlibrary.org/b/isbn/9780140350722-M.jpg;1886;320
+133;Pollyanna;Eleanor H. Porter;Infantojuvenil;https://covers.openlibrary.org/b/isbn/9780140367553-M.jpg;1913;288
+134;Mulherzinhas;Louisa May Alcott;Ficção;https://covers.openlibrary.org/b/isbn/9780147514011-M.jpg;1868;449
+135;Alice no País das Maravilhas;Lewis Carroll;Fantasia;https://covers.openlibrary.org/b/isbn/9780486275436-M.jpg;1865;192
+136;Através do Espelho;Lewis Carroll;Fantasia;https://covers.openlibrary.org/b/isbn/9780141439761-M.jpg;1871;224
+137;Peter Pan;J.M. Barrie;Fantasia;https://covers.openlibrary.org/b/isbn/9780141322575-M.jpg;1911;207
+138;O Vento nos Salgueiros;Kenneth Grahame;Infantojuvenil;https://covers.openlibrary.org/b/isbn/9780143039099-M.jpg;1908;256
+139;A Volta ao Mundo em 80 Dias;Jules Verne;Aventura;https://covers.openlibrary.org/b/isbn/9780486411117-M.jpg;1873;240
+140;Vinte Mil Léguas Submarinas;Jules Verne;Aventura;https://covers.openlibrary.org/b/isbn/9780486448816-M.jpg;1870;452
+141;Viagem ao Centro da Terra;Jules Verne;Aventura;https://covers.openlibrary.org/b/isbn/9780486440889-M.jpg;1864;240
+142;A Ilha Misteriosa;Jules Verne;Aventura;https://covers.openlibrary.org/b/isbn/9780486451373-M.jpg;1874;592
+143;O Lobo da Estepe;Hermann Hesse;Filosofia;https://covers.openlibrary.org/b/isbn/9780142437186-M.jpg;1927;256
+144;Sidarta;Hermann Hesse;Filosofia;https://covers.openlibrary.org/b/isbn/9780553208849-M.jpg;1922;160
+145;Demian;Hermann Hesse;Filosofia;https://covers.openlibrary.org/b/isbn/9780142437186-M.jpg;1919;176
+146;O Jogador;Fiódor Dostoiévski;Ficção;https://covers.openlibrary.org/b/isbn/9780486450734-M.jpg;1867;208
+147;Humilhados e Ofendidos;Fiódor Dostoiévski;Ficção;https://covers.openlibrary.org/b/isbn/9780486437124-M.jpg;1861;384
+148;O Vermelho e o Negro;Stendhal;Romance;https://covers.openlibrary.org/b/isbn/9780140447644-M.jpg;1830;576
+149;Madame Bovary;Gustave Flaubert;Romance;https://covers.openlibrary.org/b/isbn/9780140449129-M.jpg;1856;368
+150;O Pai Goriot;Honoré de Balzac;Ficção;https://covers.openlibrary.org/b/isbn/9780140449723-M.jpg;1835;352
+151;Eugénie Grandet;Honoré de Balzac;Ficção;https://covers.openlibrary.org/b/isbn/9780140449433-M.jpg;1833;304
+152;O Estrangeiro do Templo;Willa Cather;Ficção;https://covers.openlibrary.org/b/isbn/9780679728894-M.jpg;1927;256
+153;Minha Antônia;Willa Cather;Ficção;https://covers.openlibrary.org/b/isbn/9780679728894-M.jpg;1918;272
+154;O Grito Silencioso;Kenzaburo Oe;Ficção;https://covers.openlibrary.org/b/isbn/9780802150615-M.jpg;1967;364
+155;Neve;Orhan Pamuk;Ficção;https://covers.openlibrary.org/b/isbn/9780375706868-M.jpg;2002;426
+156;O Livro Negro;Orhan Pamuk;Mistério;https://covers.openlibrary.org/b/isbn/9780375706851-M.jpg;1990;480
+157;A Casa dos Espíritos;Isabel Allende;Ficção;https://covers.openlibrary.org/b/isbn/9781501117015-M.jpg;1982;481
+158;Eva Luna;Isabel Allende;Ficção;https://covers.openlibrary.org/b/isbn/9781501117039-M.jpg;1987;272
+159;Paula;Isabel Allende;Biografia;https://covers.openlibrary.org/b/isbn/9780061564902-M.jpg;1994;432
+160;Cem Anos de Solidão;Gabriel García Márquez;Realismo Mágico;https://covers.openlibrary.org/b/isbn/9780060883288-M.jpg;1967;417
+161;O Amor nos Tempos do Cólera;Gabriel García Márquez;Ficção;https://covers.openlibrary.org/b/isbn/9780307389732-M.jpg;1985;368
+162;Crônica de uma Morte Anunciada;Gabriel García Márquez;Ficção;https://covers.openlibrary.org/b/isbn/9781400034710-M.jpg;1981;128
+163;A Metade Sombria;Stephen King;Terror;https://covers.openlibrary.org/b/isbn/9780451167316-M.jpg;1989;431
+164;O Cemitério;Stephen King;Terror;https://covers.openlibrary.org/b/isbn/9780307744654-M.jpg;1983;560
+165;Christine;Stephen King;Terror;https://covers.openlibrary.org/b/isbn/9781501147401-M.jpg;1983;526
+166;O Instituto;Stephen King;Suspense;https://covers.openlibrary.org/b/isbn/9781982110567-M.jpg;2019;576
+167;Misery;Stephen King;Suspense;https://covers.openlibrary.org/b/isbn/9781501143106-M.jpg;1987;320
+168;A Estrada;Cormac McCarthy;Ficção;https://covers.openlibrary.org/b/isbn/9780307387899-M.jpg;2006;256
+169;Onde os Velhos Não Têm Vez;Cormac McCarthy;Ficção;https://covers.openlibrary.org/b/isbn/9780307387134-M.jpg;2005;309
+170;Meridiano de Sangue;Cormac McCarthy;Ficção;https://covers.openlibrary.org/b/isbn/9780679728757-M.jpg;1985;351
+171;O Sol Também se Levanta;Ernest Hemingway;Ficção;https://covers.openlibrary.org/b/isbn/9780743297332-M.jpg;1926;251
+172;Adeus às Armas;Ernest Hemingway;Ficção;https://covers.openlibrary.org/b/isbn/9780684801469-M.jpg;1929;332
+173;Por Quem os Sinos Dobram;Ernest Hemingway;Ficção;https://covers.openlibrary.org/b/isbn/9780684803357-M.jpg;1940;471
+174;A Velha Casa da Colina;Shirley Jackson;Terror;https://covers.openlibrary.org/b/isbn/9780141191447-M.jpg;1959;182
+175;Sempre Vivemos no Castelo;Shirley Jackson;Terror;https://covers.openlibrary.org/b/isbn/9780143039976-M.jpg;1962;162
+176;Rebeca;Daphne du Maurier;Suspense;https://covers.openlibrary.org/b/isbn/9780380729401-M.jpg;1938;449
+177;O Pássaro Pintado;Jerzy Kosinski;Ficção;https://covers.openlibrary.org/b/isbn/9780802134226-M.jpg;1965;234
+178;O Homem Duplicado;José Saramago;Ficção;https://covers.openlibrary.org/b/isbn/9780156032582-M.jpg;2002;300
+179;Ensaio Sobre a Cegueira;José Saramago;Ficção;https://covers.openlibrary.org/b/isbn/9780156007757-M.jpg;1995;352
+180;O Evangelho Segundo Jesus Cristo;José Saramago;Ficção;https://covers.openlibrary.org/b/isbn/9780156001410-M.jpg;1991;526
+181;As Intermitências da Morte;José Saramago;Ficção;https://covers.openlibrary.org/b/isbn/9780151010058-M.jpg;2005;256
+182;Kafka à Beira-Mar;Haruki Murakami;Ficção;https://covers.openlibrary.org/b/isbn/9781400079277-M.jpg;2002;467
+183;1Q84 - Livro 1;Haruki Murakami;Ficção;https://covers.openlibrary.org/b/isbn/9780307593313-M.jpg;2009;447
+184;1Q84 - Livro 2;Haruki Murakami;Ficção;https://covers.openlibrary.org/b/isbn/9780307593337-M.jpg;2009;450
+185;1Q84 - Livro 3;Haruki Murakami;Ficção;https://covers.openlibrary.org/b/isbn/9780307593344-M.jpg;2010;622
+186;O Incolor Tsukuru Tazaki;Haruki Murakami;Ficção;https://covers.openlibrary.org/b/isbn/9780385352109-M.jpg;2013;400
+187;Norwegian Wood;Haruki Murakami;Ficção;https://covers.openlibrary.org/b/isbn/9780375704024-M.jpg;1987;296
+188;A Garota do Trem;Paula Hawkins;Thriller;https://covers.openlibrary.org/b/isbn/9781594634024-M.jpg;2015;336
+189;Em Águas Sombrias;Paula Hawkins;Thriller;https://covers.openlibrary.org/b/isbn/9781594634482-M.jpg;2017;400
+190;O Código Da Vinci;Dan Brown;Suspense;https://covers.openlibrary.org/b/isbn/9780307474278-M.jpg;2003;489
+191;Anjos e Demônios;Dan Brown;Suspense;https://covers.openlibrary.org/b/isbn/9781416524793-M.jpg;2000;736
+192;O Símbolo Perdido;Dan Brown;Suspense;https://covers.openlibrary.org/b/isbn/9780307950680-M.jpg;2009;509
+193;Inferno;Dan Brown;Suspense;https://covers.openlibrary.org/b/isbn/9780804172264-M.jpg;2013;480
+194;Origem;Dan Brown;Suspense;https://covers.openlibrary.org/b/isbn/9780525563709-M.jpg;2017;480
+195;O Homem de Areia;E.T.A. Hoffmann;Terror;https://covers.openlibrary.org/b/isbn/9780140442675-M.jpg;1816;128
+196;Os Sofrimentos do Jovem Werther;Goethe;Romance;https://covers.openlibrary.org/b/isbn/9780140445034-M.jpg;1774;176
+197;Fausto;Goethe;Tragédia;https://covers.openlibrary.org/b/isbn/9780140449018-M.jpg;1808;464
+198;Tristão e Isolda;Gottfried von Strassburg;Romance;https://covers.openlibrary.org/b/isbn/9780140442736-M.jpg;1210;352
+199;Beowulf;Desconhecido;Épico;https://covers.openlibrary.org/b/isbn/9780393320978-M.jpg;1000;213
+200;O Paraíso Perdido;John Milton;Poesia;https://covers.openlibrary.org/b/isbn/9780140424398-M.jpg;1667;453
+201;O Paraíso Reconquistado;John Milton;Poesia;https://covers.openlibrary.org/b/isbn/9780140424398-M.jpg;1671;128
+202;Canção de Rolando;Desconhecido;Épico;https://covers.openlibrary.org/b/isbn/9780140440754-M.jpg;1100;208
+203;O Morro das Fadas;George MacDonald;Fantasia;https://covers.openlibrary.org/b/isbn/9780802860600-M.jpg;1858;248
+204;Lilith;George MacDonald;Fantasia;https://covers.openlibrary.org/b/isbn/9780802860600-M.jpg;1895;265
+205;O Rosto na Multidão;David Foster Wallace;Ficção;https://covers.openlibrary.org/b/isbn/9780316193510-M.jpg;2012;64
+206;Graça Infinita;David Foster Wallace;Ficção;https://covers.openlibrary.org/b/isbn/9780316066524-M.jpg;1996;1104
+207;O Castelo de Vidro;Jeannette Walls;Memórias;https://covers.openlibrary.org/b/isbn/9780743247542-M.jpg;2005;304
+208;A Estrada da Noite;Joe Hill;Terror;https://covers.openlibrary.org/b/isbn/9780061147982-M.jpg;2007;384
+209;Nosferatu;Joe Hill;Terror;https://covers.openlibrary.org/b/isbn/9780062200587-M.jpg;2013;720
+210;O Pacto;Joe Hill;Terror;https://covers.openlibrary.org/b/isbn/9780061147982-M.jpg;2010;336
+211,The Winter Oracle,Eva Kingsley,https://covers.openlibrary.org/b/id/200011-L.jpg
+212,Through the Iron Forest,Samuel Rourke,https://covers.openlibrary.org/b/id/200012-L.jpg
+213,Mirrors of the Fallen,Lucy Warrick,https://covers.openlibrary.org/b/id/200013-L.jpg
+214,Serpent of the Silent Deep,Oscar Beaumont,https://covers.openlibrary.org/b/id/200014-L.jpg
+215,Dust of Lost Empires,Ashley Corbin,https://covers.openlibrary.org/b/id/200015-L.jpg
+216,The Fire Within the Stone,Nathan Crowe,https://covers.openlibrary.org/b/id/200016-L.jpg
+217,Realm of the Quiet Sun,Marina Lowell,https://covers.openlibrary.org/b/id/200017-L.jpg
+218,The Starcatcher's Dilemma,Henry Dalca,https://covers.openlibrary.org/b/id/200018-L.jpg
+219,Whispers of the Sapphire Wind,Julia Monroe,https://covers.openlibrary.org/b/id/200019-L.jpg
+220,The Geometry of Fate,Patrick Quinn,https://covers.openlibrary.org/b/id/200020-L.jpg
+221,Hidden Beneath the Ember Sea,Rachel Thorn,https://covers.openlibrary.org/b/id/200021-L.jpg
+222,The Archivist's Oath,Dylan Mercer,https://covers.openlibrary.org/b/id/200022-L.jpg
+223,The City of Folding Time,Helena Frost,https://covers.openlibrary.org/b/id/200023-L.jpg
+224,The Seventh Mosaic,Adrian Locke,https://covers.openlibrary.org/b/id/200024-L.jpg
+225,Blood of the Black Sun,Isabelle Crane,https://covers.openlibrary.org/b/id/200025-L.jpg
+226,The Mapmaker's Secret,Thomas Winter,https://covers.openlibrary.org/b/id/200026-L.jpg
+227,Children of the Winding River,Sophie Hale,https://covers.openlibrary.org/b/id/200027-L.jpg
+228,The Quantum Nomad,Ben Rivers,https://covers.openlibrary.org/b/id/200028-L.jpg
+229,The Song of Hollow Stars,Elena Korr,https://covers.openlibrary.org/b/id/200029-L.jpg
+230,The Alabaster Dragon,Marcus Flint,https://covers.openlibrary.org/b/id/200030-L.jpg
+231,Stormbound Prophet,Angela Kerr,https://covers.openlibrary.org/b/id/200031-L.jpg
+232,Ruins of the Crimson Throne,Victor Arden,https://covers.openlibrary.org/b/id/200032-L.jpg
+233,Letters From the Forgotten Isles,Theresa Vaughn,https://covers.openlibrary.org/b/id/200033-L.jpg
+234,The Forgotten Spire,Gregory Trent,https://covers.openlibrary.org/b/id/200034-L.jpg
+235,The Jade Oracle,Sabrina Lang,https://covers.openlibrary.org/b/id/200035-L.jpg
+236,The Scarlet Horizon,Oliver Kane,https://covers.openlibrary.org/b/id/200036-L.jpg
+237,The Invisible Voyage,Emily Rhodes,https://covers.openlibrary.org/b/id/200037-L.jpg
+238,Tales of the Lunar Caravan,Jared Lowell,https://covers.openlibrary.org/b/id/200038-L.jpg
+239,The Opal Citadel,Monica Rivers,https://covers.openlibrary.org/b/id/200039-L.jpg
+240,Beyond the Silent Frontier,Luke Connelly,https://covers.openlibrary.org/b/id/200040-L.jpg
+241,The Celestial Tides,Naomi Strauss,https://covers.openlibrary.org/b/id/200041-L.jpg
+242,The Gilded Wolf King,Daniel Frost,https://covers.openlibrary.org/b/id/200042-L.jpg
+243,The Cipher of Glass Towers,Rebecca Shore,https://covers.openlibrary.org/b/id/200043-L.jpg
+244,The Oracle's Labyrinth,Jeremy Kane,https://covers.openlibrary.org/b/id/200044-L.jpg
+245,The Wandering Sonata,Hannah Beaumont,https://covers.openlibrary.org/b/id/200045-L.jpg
+246,The Onyx Voyager,Philip Keller,https://covers.openlibrary.org/b/id/200046-L.jpg
+247,Mysteries of the Verdant Crown,Vivian Clarke,https://covers.openlibrary.org/b/id/200047-L.jpg
+248,The Last Emberfall,Jonas White,https://covers.openlibrary.org/b/id/200048-L.jpg
+249,The Silver Grove Prophecy,Lydia Rowan,https://covers.openlibrary.org/b/id/200049-L.jpg
+250,Voices of the Glass Expanse,Marcus Hill,https://covers.openlibrary.org/b/id/200050-L.jpg
+251,The Thirteenth Omen,Sarah Conner,https://covers.openlibrary.org/b/id/200051-L.jpg
+252,The Phantom Clocktower,Ethan Blake,https://covers.openlibrary.org/b/id/200052-L.jpg
+253,The Emerald Heir,Carina West,https://covers.openlibrary.org/b/id/200053-L.jpg
+254,Chronicles of the Broken Star,Kyle Werner,https://covers.openlibrary.org/b/id/200054-L.jpg
+255,The Moonlit Covenant,Sophia Dale,https://covers.openlibrary.org/b/id/200055-L.jpg
+256,The Shadow Loom,Matthew Irving,https://covers.openlibrary.org/b/id/200056-L.jpg
+257,The Windbinder Saga,Julia Trent,https://covers.openlibrary.org/b/id/200057-L.jpg
+258,The Lost Symphony,Willard Cross,https://covers.openlibrary.org/b/id/200058-L.jpg
+259,Kingdom of the Pale Ember,Kayla Harmon,https://covers.openlibrary.org/b/id/200059-L.jpg
+260,The Crystal Knight,Jonathan Ray,https://covers.openlibrary.org/b/id/200060-L.jpg
+261,The Hollow Vineyard,Laura Pierce,https://covers.openlibrary.org/b/id/200061-L.jpg
+262,The Sapphire Enigma,Peter Lowell,https://covers.openlibrary.org/b/id/200062-L.jpg
+263,The Atlas of Shattered Paths,Emma Walsh,https://covers.openlibrary.org/b/id/200063-L.jpg
+264,The Grimoire of Fallen Saints,Ryan Caldwell,https://covers.openlibrary.org/b/id/200064-L.jpg
+265,The Iron Warden,Isla Thorn,https://covers.openlibrary.org/b/id/200065-L.jpg
+266,The Veil of Lost Tempests,Adrian Gale,https://covers.openlibrary.org/b/id/200066-L.jpg
+267,The Endless Mirage,Clara Winslow,https://covers.openlibrary.org/b/id/200067-L.jpg
+268,The Bone Harvester,Michael Dawes,https://covers.openlibrary.org/b/id/200068-L.jpg
+269,The Lantern at World's Edge,Angela Rowan,https://covers.openlibrary.org/b/id/200069-L.jpg
+270,The Sunken Sanctuary,Victor Hale,https://covers.openlibrary.org/b/id/200070-L.jpg
+271,The Tempest Monolith,Rebecca Vale,https://covers.openlibrary.org/b/id/200071-L.jpg
+272,The Nightfall Manuscript,David Brooks,https://covers.openlibrary.org/b/id/200072-L.jpg
+273,The Rose of Silent Seasons,Olivia Hart,https://covers.openlibrary.org/b/id/200073-L.jpg
+274,The Fractured Compass,Nathan Reed,https://covers.openlibrary.org/b/id/200074-L.jpg
+275,The Ivory Caravan,Michelle Vance,https://covers.openlibrary.org/b/id/200075-L.jpg
+276,The Sunlit Harbor,Andrew Keane,https://covers.openlibrary.org/b/id/200076-L.jpg
+277,The Amethyst Storm,Sara Lorrin,https://covers.openlibrary.org/b/id/200077-L.jpg
+278,The Drowned Kingdom,Mark Spencer,https://covers.openlibrary.org/b/id/200078-L.jpg
+279,The Cinder Crown,Helena Woods,https://covers.openlibrary.org/b/id/200079-L.jpg
+280,The Twilight Equation,Jared Miles,https://covers.openlibrary.org/b/id/200080-L.jpg
+281,The Timber Song,Emily Kerrigan,https://covers.openlibrary.org/b/id/200081-L.jpg
+282,The Labyrinth of Winter,Anthony Lowell,https://covers.openlibrary.org/b/id/200082-L.jpg
+283,The Azure Pact,Nora Williams,https://covers.openlibrary.org/b/id/200083-L.jpg
+284,The Silver Ferryman,Oliver Voss,https://covers.openlibrary.org/b/id/200084-L.jpg
+285,The Starlit Obelisk,Clara Benson,https://covers.openlibrary.org/b/id/200085-L.jpg
+286,The Garnet Kingdom,Stephen Hale,https://covers.openlibrary.org/b/id/200086-L.jpg
+287,The Orchard of Forgotten Time,Lauren Pike,https://covers.openlibrary.org/b/id/200087-L.jpg
+288,The Gravity Scribe,Victor Rowland,https://covers.openlibrary.org/b/id/200088-L.jpg
+289,The Lunar Bastion,Sophie Turner,https://covers.openlibrary.org/b/id/200089-L.jpg
+290,The Citadel of Thorns,Patrick Rhodes,https://covers.openlibrary.org/b/id/200090-L.jpg
+291,The Crimson Navigator,Amanda Finch,https://covers.openlibrary.org/b/id/200091-L.jpg
+292,The Mask of Silent Echoes,Daniel Waters,https://covers.openlibrary.org/b/id/200092-L.jpg
+293,The Pilgrim of Glass Roads,Heather Collins,https://covers.openlibrary.org/b/id/200093-L.jpg
+294,The Evergreen Prophecy,Liam Sterling,https://covers.openlibrary.org/b/id/200094-L.jpg
+295,The Spectrum of Storms,Evelyn Kerr,https://covers.openlibrary.org/b/id/200095-L.jpg
+296,The Chronicle of Ember Veins,Oscar Brennan,https://covers.openlibrary.org/b/id/200096-L.jpg
+297,The Gilded Nomad,Chloe Harrington,https://covers.openlibrary.org/b/id/200097-L.jpg
+298,The River of Hollow Crowns,Jacob Stone,https://covers.openlibrary.org/b/id/200098-L.jpg
+299,The Spiral Empress,Charlotte Quinn,https://covers.openlibrary.org/b/id/200099-L.jpg
+300,The Astral Vanguard,Henry Locke,https://covers.openlibrary.org/b/id/200100-L.jpg

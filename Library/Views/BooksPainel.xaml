@@ -8,38 +8,126 @@
              d:DataContext="{d:DesignInstance Type=vm:BooksViewModel, IsDesignTimeCreatable=True}"
              d:DesignHeight="520" d:DesignWidth="1030">
 
+    <UserControl.Resources>
+
+        <!--Personalização da ScrollBar-->
+        <Style TargetType="ScrollBar" x:Key="ScrollBarBooksPainel">
+            <Setter Property="Width" Value="8"/>
+            <Setter Property="Margin" Value="0 0 10 0"/>
+            <Setter Property="Background" Value="#E8D1C5"/>
+            <Setter Property="Template"> <!--alterando o molde padrão de scrollbar-->
+                <Setter.Value>
+                    <ControlTemplate TargetType="ScrollBar">
+                        <Grid Background="Transparent">
+                            <Track Name="PART_Track" IsDirectionReversed="True"> <!--alterando o trilho de scroll-->
+                                <Track.DecreaseRepeatButton>
+                                    <RepeatButton Command="ScrollBar.LineUpCommand" Visibility="Collapsed"/>
+                                </Track.DecreaseRepeatButton>
+                                <Track.IncreaseRepeatButton>
+                                    <RepeatButton Command="ScrollBar.LineDownCommand" Visibility="Collapsed"/>
+                                </Track.IncreaseRepeatButton>
+                                <Track.Thumb>
+                                    <Thumb Background="#FF888888"/>
+                                </Track.Thumb>
+                            </Track>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+        </Style>
+
+
+    </UserControl.Resources>
+
     <Grid>
 
         <ListView ItemsSource="{Binding BooksCollection}" ScrollViewer.ScrollChanged="ListView_ScrollChanged" 
                   Background="Transparent" BorderThickness="0"
                   VerticalAlignment="Center" Margin="30 0 0 30">
 
+            <!--Alterando os recursos padrão de componentes da ListView-->
+            <ListView.Resources>
+                <Style TargetType="ScrollBar" BasedOn="{StaticResource ScrollBarBooksPainel}"/>
+            </ListView.Resources>
+
+            <!--Alterando o formato de exibiçao dos itens do painel-->
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
                     <UniformGrid Columns="5"/>
                 </ItemsPanelTemplate>
             </ListView.ItemsPanel>
 
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <!--Removendo a exibição padrão (azul)-->
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                    <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="ListViewItem">
+                                <ContentPresenter/>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </ListView.ItemContainerStyle>
+
+            <!--Modelo de cada livro-->
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Border BorderBrush="#E8D1C5" BorderThickness="0" Margin="5" Padding="10" Width="170" Height="250">
-                        
-                        <Border.Background>
-                            <LinearGradientBrush StartPoint="0,0" EndPoint="1, 1" Opacity="0.9">
-                                <GradientStop Color="#57595B" Offset="0"/>
-                                <GradientStop Color="#E8D1C5" Offset="1"/>
-                            </LinearGradientBrush>
-                        </Border.Background>
-                        
-                        <StackPanel Orientation="Vertical" Margin="10">
-                            <Image Source="{Binding Thumbnail}" Width="100" Height="150" Margin="0 0 0 5"/>
-                            <TextBlock Text="{Binding Title}" FontWeight="Bold" FontSize="16"/>
-                            <TextBlock Text="{Binding Author}" FontStyle="Italic"/>
-                            <TextBlock Text="{Binding Category}" Foreground="#E8D1C5"/>
-                            <TextBlock Text="{Binding YearPublished}" Foreground="#57595B"/>
-                            <TextBlock Text="{Binding NumberOfPages}" Foreground="#57595B"/>
-                        </StackPanel>
-                    </Border>
+                    <Grid>
+                        <Border BorderBrush="#E8D1C5" BorderThickness="1" CornerRadius="4"
+                            Margin="5" Width="170" Height="270">
+
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1, 1" Opacity="0.9">
+                                    <GradientStop Color="#57595B" Offset="0"/>
+                                    <GradientStop Color="#E8D1C5" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+
+                            <!--Criei esse grid para habilitar mais de um filho (StackPanel e PopUp) dentro de Border (que uso para cornerradius), visto que ele só aceita 1 filho-->
+                            <Grid>
+                                <StackPanel Orientation="Vertical" Margin="8">
+                                    <Image Source="{Binding Thumbnail}" Width="100" Height="150" Margin="0 0 0 5"/>
+                                    <TextBlock Text="{Binding Title}" FontWeight="Bold" FontSize="16"/>
+                                    <TextBlock Text="{Binding Author}" FontWeight="SemiBold" FontSize="12" FontStyle="Italic"/>
+                                    <TextBlock Text="{Binding Category}" Foreground="#57595B"/>
+                                    <TextBlock Text="{Binding YearPublished}" Foreground="#57595B"/>
+                                    <TextBlock Text="{Binding NumberOfPages}" Foreground="#57595B"/>
+                                </StackPanel>
+
+                                <Popup Placement="MousePoint" StaysOpen="False" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                                    <Popup.Style>
+                                        <Style TargetType="Popup">
+                                            <Setter Property="IsOpen" Value="False"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType=ListViewItem}, Path=IsMouseOver}" Value="True">
+                                                    <Setter Property="IsOpen" Value="True"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Popup.Style>
+                                    
+                                    <Border Background="White" Padding="10" CornerRadius="5" BorderBrush="Gray" BorderThickness="1">
+                                        <StackPanel VerticalAlignment="Center">
+                                            <Button Content="Favorite ⭐" Command="{Binding DataContext.MarkFavoriteCommand, RelativeSource={RelativeSource AncestorType=ListView}}" CommandParameter="{Binding}"/>
+                                            <Button Content="Readed 📖" Command="{Binding DataContext.MarkReadedCommand, RelativeSource={RelativeSource AncestorType=ListView}}"
+                                              CommandParameter="{Binding}"/>
+                                        </StackPanel>
+                                        
+                                    </Border>
+                                    
+                                </Popup>
+                                
+                            </Grid>
+
+                        </Border>
+                    </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
 

@@ -7,33 +7,38 @@
              mc:Ignorable="d" 
              d:DesignHeight="740" d:DesignWidth="1030">
 
-    <Border CornerRadius="0 40 40 0">
+    <Border CornerRadius="0 40 40 0" BorderThickness="0">
 
-        <!--Background MainMenu-->
-        <Border.Background>
-            <LinearGradientBrush StartPoint="0,1" EndPoint="1,2">
-                <GradientStop Color="#181C14" Offset="0"/>
-                <GradientStop Color="#F3E8DF" Offset="1"/>
-            </LinearGradientBrush>
-        </Border.Background>
-
-        <!--4 linhas designadas-->
         <Grid>
+            
+            <!--Imagem de fundo-->
+            <Image Source="/Resources/backgroundLibrary.jpg"
+                   Stretch="UniformToFill"
+                   Panel.ZIndex="0"/>
 
-            <Grid.RowDefinitions>
-                <RowDefinition Height="70"/>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="50"/>
-            </Grid.RowDefinitions>
 
-            <views:WindowsButtons Grid.Row="0"/>
+            <!--4 linhas designadas-->
+            <Grid Panel.ZIndex="1">
 
-            <views:SearchOrder Grid.Row="1"/>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="90"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
 
-            <views:BooksPainel Grid.Row="2"/>
+                <views:WindowsButtons Grid.Row="0"/>
 
+                <views:SearchOrder Grid.Row="1"/>
+
+                <views:BooksPainel Grid.Row="2"/>
+
+            </Grid>
+            
+            
         </Grid>
+
+
 
     </Border>
 

@@ -14,7 +14,7 @@
         <Border.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="3,0">
                 <GradientStop Color="#181C14" Offset="0"/>
-                <GradientStop Color="#181C14" Offset="1"/>
+                <GradientStop Color="#581C14" Offset="1"/>
             </LinearGradientBrush>
         </Border.Background>
 
@@ -41,20 +41,20 @@
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
 
                 <!--Botão Favorites-->
-                <Button Width="250" Margin="0 150 0 0" BorderThickness="0" Background="#57595B" Padding="10">
+                <Button Width="200" Margin="0 150 0 0" BorderThickness="0" Background="#57595B" Padding="10">
                     <StackPanel Orientation="Horizontal">
                         <Border>
-                            <TextBlock Text="Favorites" FontFamily="Candara" Foreground="#F3E8DF" FontWeight="SemiBold" FontSize="25"/>
+                            <TextBlock Text="Favorites" FontFamily="Courier New" Foreground="#F3E8DF" FontSize="25"/>
                         </Border>
                         <fa:IconImage Icon="HeartCircleCheck" Width="40" Height="20" Foreground="#F3E8DF" Margin="10 0 0 0"/>
                     </StackPanel>
                 </Button>
 
                 <!--Botão Already Read-->
-                <Button Width="auto" Margin="0 70 0 0" BorderThickness="0" Background="#57595B" Padding="10">
+                <Button Width="200" Margin="0 70 0 0" BorderThickness="0" Background="#57595B" Padding="10">
                     <StackPanel Orientation="Horizontal">
                         <Border>
-                            <TextBlock Text="Already Read" FontFamily="Candara" Foreground="#F3E8DF" FontWeight="SemiBold" FontSize="25"/>
+                            <TextBlock Text="Read" FontFamily="Courier New" Foreground="#F3E8DF" FontSize="25"/>
                         </Border>
                         <fa:IconImage Icon="CheckToSlot" Width="40" Height="20" Foreground="#F3E8DF" Margin="10 0 0 0"/>
                     </StackPanel>

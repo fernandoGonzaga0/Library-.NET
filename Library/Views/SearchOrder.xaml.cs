@@ -27,9 +27,5 @@ namespace Library.Views
         {
 
         }
-        private void OrderByButton_Click(object sender, RoutedEventArgs e)
-        {
-            OrderByButton.ContextMenu.IsOpen = true;
-        }
     }
 }

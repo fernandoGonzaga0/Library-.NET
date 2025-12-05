@@ -9,11 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Remove="Resources\backgroundLibrary.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="FontAwesome.Sharp" Version="6.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\backgroundLibrary.jpg" />
   </ItemGroup>
 
   <ItemGroup>

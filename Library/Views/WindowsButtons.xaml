@@ -24,7 +24,7 @@
         </StackPanel>
         
         <!--Title-->
-        <TextBlock FontFamily="Cascadia Mono" Foreground="#F1F0E4" FontSize="30" HorizontalAlignment="Center">Library</TextBlock>
+        <TextBlock FontFamily="Courier New" FontWeight="Light" Foreground="#F1F0E4" FontSize="30" HorizontalAlignment="Center">Library</TextBlock>
         
     </StackPanel>
     

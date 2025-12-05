@@ -9,56 +9,27 @@
              MinHeight="100" MinWidth="1030">
 
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="30*"/>
-            <ColumnDefinition Width="20*"/>
-        </Grid.ColumnDefinitions>
 
         <!--Input e botão OK-->
         <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Left">
 
             <Border Height="40" Width="350" Margin="30 0 10 0"
                     CornerRadius="10" Background="#F3E8DF">
-                <TextBox Height="40" Width="350"
-                    FontWeight="ExtraLight" BorderThickness="0" FontSize="15"
-                    Background="Transparent" Foreground="#57595B"/>
+                <TextBox Height="40" Width="350" FontFamily="Courier New"
+                    FontWeight="SemiBold" BorderThickness="0" FontSize="25"
+                    Background="Transparent" Foreground="#57595B"
+                    VerticalAlignment="Center" VerticalContentAlignment="Center"
+                    HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
             </Border>
 
             <Border Width="50" Height="40" 
                     CornerRadius="10"  Background="#57595B">
-                <Button Content="OK" FontFamily="Cascadia Mono" FontSize="20"
-                    Background="Transparent" Foreground="#F3E8DF" BorderThickness="0" x:Name="Ok_Button" Click="Ok_Button_Click"/> 
+                <Button Content="OK" FontFamily="Courier New" FontSize="20"
+                    Background="Transparent" Foreground="#F3E8DF" BorderThickness="0" x:Name="Ok_Button" Click="Ok_Button_Click"/>
             </Border>
-             
-            
+
         </StackPanel>
 
-        <!--OrderBy e botão OrderBy_Button-->
-
-        <Menu Grid.Column="1" HorizontalAlignment="Right" Height="40" Width="160" Background="Transparent">
-
-            <TextBox Height="40" Margin="0 0 5 0"
-             FontFamily="Cascadia Mono" FontSize="20" Text="OrderBy" BorderThickness="0"
-             VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
-             Background="Transparent" Foreground="#F3E8DF"/>
-
-            <Button Name="OrderByButton" Background="Transparent" Click="OrderByButton_Click">
-                <fa:IconImage Icon="Filter" Foreground="#F3E8DF" Height="25"/>
-                <Button.ContextMenu>
-                    <ContextMenu>
-                        <MenuItem Header="Name"/>
-                        <MenuItem Header="Year (latest)"/>
-                        <MenuItem Header="Year (oldest)"/>
-                    </ContextMenu>
-                </Button.ContextMenu>
-            </Button>
-
-        </Menu>
-            
-            
-        
-        
-        
     </Grid>
     
 </UserControl>

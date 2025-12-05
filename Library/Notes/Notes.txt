@@ -13,7 +13,7 @@ Estrutura:
 /Services (abstrai I/O e parsing do csv, devo retornar IEnumerable<Livro> para permitir testes e async)
 	LivroService.cs
 
-/ViewModels (expõe ObservableCollection<LivroViewModel>, propriedades de filtro/ordenação e lógica de transformação dos dados)
+/ViewModels (expõe ObservableCollection<LivroViewModel> e lógica de transformação dos dados)
 	MainViewModel.cs
 	LivroViewModel.cs
 

@@ -13,7 +13,6 @@
         <!--Personalização da ScrollBar-->
         <Style TargetType="ScrollBar" x:Key="ScrollBarBooksPainel">
             <Setter Property="Width" Value="8"/>
-            <Setter Property="Height" Value="400"/>
             <Setter Property="Margin" Value="0 0 10 0"/>
             <Setter Property="Background" Value="#E8D1C5"/>
             <Setter Property="Template"> <!--alterando o molde padrão de scrollbar-->
@@ -28,7 +27,18 @@
                                     <RepeatButton Command="ScrollBar.LineDownCommand" Visibility="Collapsed"/>
                                 </Track.IncreaseRepeatButton>
                                 <Track.Thumb>
-                                    <Thumb Background="#FF888888"/>
+                                    <Thumb MinHeight="500">
+                                        <Thumb.Style>
+                                            <Style TargetType="Thumb">
+                                                <Setter Property="Background" Value="#FF888888"/>
+                                                <Style.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Background" Value="#FF444444"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Thumb.Style>
+                                    </Thumb>
                                 </Track.Thumb>
                             </Track>
                         </Grid>

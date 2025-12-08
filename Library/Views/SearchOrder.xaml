@@ -11,9 +11,9 @@
     <Grid>
 
         <!--Input e botão OK-->
-        <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Left">
+        <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center">
 
-            <Border Height="40" Width="350" Margin="30 0 10 0"
+            <Border Height="40" Width="550" Margin="30 0 10 0"
                     CornerRadius="10" Background="#F3E8DF">
                 <TextBox Height="40" Width="350" FontFamily="Courier New"
                     BorderThickness="0" FontSize="20"

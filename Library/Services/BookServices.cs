@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic; // habilitará List<T>
-using System.IO; // permite manipular arquivos e caminhos
+﻿using System.IO; // permite manipular arquivos e caminhos
 using Library.Models;
 
 // Esse será o módulo responsável somente pela leitura do CSV, converter cada linha em um objeto Livro, devolver uma lista de Livro pronta para ser usada em ViewModel.

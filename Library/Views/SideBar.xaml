@@ -12,7 +12,7 @@
 
         <!--Estilo da coluna-->
         <Border.Background>
-            <LinearGradientBrush StartPoint="0,0" EndPoint="3,0">
+            <LinearGradientBrush StartPoint="0.9,0.4" EndPoint="1,1">
                 <GradientStop Color="#181C14" Offset="0"/>
                 <GradientStop Color="#581C14" Offset="1"/>
             </LinearGradientBrush>

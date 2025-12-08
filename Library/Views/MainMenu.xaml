@@ -18,8 +18,8 @@
             <Grid Panel.ZIndex="1">
 
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="90"/>
-                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="130"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 

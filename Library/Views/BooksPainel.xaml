@@ -13,6 +13,7 @@
         <!--Personalização da ScrollBar-->
         <Style TargetType="ScrollBar" x:Key="ScrollBarBooksPainel">
             <Setter Property="Width" Value="8"/>
+            <Setter Property="Height" Value="400"/>
             <Setter Property="Margin" Value="0 0 10 0"/>
             <Setter Property="Background" Value="#E8D1C5"/>
             <Setter Property="Template"> <!--alterando o molde padrão de scrollbar-->
@@ -44,7 +45,7 @@
 
         <ListView ItemsSource="{Binding BooksCollection}" ScrollViewer.ScrollChanged="ListView_ScrollChanged" 
                   Background="Transparent" BorderThickness="0"
-                  VerticalAlignment="Center" Margin="30 0 0 30">
+                  VerticalAlignment="Center" Margin="30 0 40 20">
 
             <!--Alterando os recursos padrão de componentes da ListView-->
             <ListView.Resources>
@@ -97,33 +98,12 @@
                                     <TextBlock Text="{Binding Author}" FontWeight="SemiBold" FontSize="12" FontStyle="Italic"/>
                                     <TextBlock Text="{Binding Category}" Foreground="#57595B"/>
                                     <TextBlock Text="{Binding YearPublished}" Foreground="#57595B"/>
-                                    <TextBlock Text="{Binding NumberOfPages}" Foreground="#57595B"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{Binding NumberOfPages}" Foreground="#57595B"/>
+                                        <TextBox Background="Transparent" BorderThickness="0" Text="pages" Foreground="#57595B"/>
+                                    </StackPanel>
                                 </StackPanel>
 
-                                <Popup Placement="MousePoint" StaysOpen="False" HorizontalAlignment="Center" VerticalAlignment="Center">
-
-                                    <Popup.Style>
-                                        <Style TargetType="Popup">
-                                            <Setter Property="IsOpen" Value="False"/>
-                                            <Style.Triggers>
-                                                <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType=ListViewItem}, Path=IsMouseOver}" Value="True">
-                                                    <Setter Property="IsOpen" Value="True"/>
-                                                </DataTrigger>
-                                            </Style.Triggers>
-                                        </Style>
-                                    </Popup.Style>
-                                    
-                                    <Border Background="White" Padding="10" CornerRadius="5" BorderBrush="Gray" BorderThickness="1">
-                                        <StackPanel VerticalAlignment="Center">
-                                            <Button Content="Favorite ⭐" Command="{Binding DataContext.MarkFavoriteCommand, RelativeSource={RelativeSource AncestorType=ListView}}" CommandParameter="{Binding}"/>
-                                            <Button Content="Readed 📖" Command="{Binding DataContext.MarkReadedCommand, RelativeSource={RelativeSource AncestorType=ListView}}"
-                                              CommandParameter="{Binding}"/>
-                                        </StackPanel>
-                                        
-                                    </Border>
-                                    
-                                </Popup>
-                                
                             </Grid>
 
                         </Border>

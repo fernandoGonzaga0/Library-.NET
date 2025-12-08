@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <None Remove="Resources\backgroundLibrary.jpg" />
+    <None Remove="Resources\backgroundMainMenu.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,7 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Resources\backgroundLibrary.jpg" />
+    <Resource Include="Resources\backgroundMainMenu.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>

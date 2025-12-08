@@ -16,10 +16,10 @@
             <Border Height="40" Width="350" Margin="30 0 10 0"
                     CornerRadius="10" Background="#F3E8DF">
                 <TextBox Height="40" Width="350" FontFamily="Courier New"
-                    FontWeight="SemiBold" BorderThickness="0" FontSize="25"
-                    Background="Transparent" Foreground="#57595B"
+                    BorderThickness="0" FontSize="20"
+                    Background="Transparent" Foreground="Black"
                     VerticalAlignment="Center" VerticalContentAlignment="Center"
-                    HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+                    HorizontalAlignment="Left" HorizontalContentAlignment="Left"/>
             </Border>
 
             <Border Width="50" Height="40" 

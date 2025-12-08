@@ -10,12 +10,9 @@
     <Border CornerRadius="0 40 40 0" BorderThickness="0">
 
         <Grid>
-            
-            <!--Imagem de fundo-->
-            <Image Source="/Resources/backgroundLibrary.jpg"
-                   Stretch="UniformToFill"
-                   Panel.ZIndex="0"/>
 
+            <Image Source="pack://application:,,,/Library;component/Resources/backgroundMainMenu.jpg"
+                   Stretch="UniformToFill"/>
 
             <!--4 linhas designadas-->
             <Grid Panel.ZIndex="1">
@@ -24,7 +21,6 @@
                     <RowDefinition Height="90"/>
                     <RowDefinition Height="100"/>
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="50"/>
                 </Grid.RowDefinitions>
 
                 <views:WindowsButtons Grid.Row="0"/>

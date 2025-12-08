@@ -6,25 +6,22 @@
              xmlns:local="clr-namespace:Library.Views"
              xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
              mc:Ignorable="d" 
-             MinHeight="70" MinWidth="1030">
+             MinHeight="70" MinWidth="1030" Background="Transparent">
 
     <StackPanel>
 
         <!--Buttons-->
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Height="30" Margin="0 5 30 0">
-            <Button x:Name="btnMinimize" Width="25" Height="25" Background="Transparent" BorderBrush="Transparent" Click="btnMinimize_Click" Margin="0 0 10 0">
-                <fa:IconImage Icon="WindowMinimize" Foreground="#E8D1C5"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Height="40" Margin="0 5 10 0">
+            <Button x:Name="btnMinimize" Width="45" Height="35" Background="Transparent" BorderBrush="Transparent" Click="btnMinimize_Click" Margin="0 0 10 0">
+                <fa:IconImage Icon="WindowMinimize" Foreground="#F3E8DF"/>
             </Button>
-            <Button x:Name="btnMaximize" Width="25" Height="25" Background="Transparent" BorderBrush="Transparent" Click="btnMaximize_Click" Margin="0 0 10 0">
-                <fa:IconImage Icon="WindowMaximize" Foreground="#E8D1C5"/>
+            <Button x:Name="btnMaximize" Width="45" Height="35" Background="Transparent" BorderBrush="Transparent" Click="btnMaximize_Click" Margin="0 0 10 0">
+                <fa:IconImage Icon="WindowMaximize" Foreground="#F3E8DF"/>
             </Button>
-            <Button x:Name="btnClose" Width="25" Height="25" Background="Transparent" BorderBrush="Transparent" Click="btnClose_Click" Margin="0 0 10 0">
-                <fa:IconImage Icon="WindowClose" Foreground="#E8D1C5"/>
+            <Button x:Name="btnClose" Width="45" Height="35" Background="Transparent" BorderBrush="Transparent" Click="btnClose_Click" Margin="0 0 10 0">
+                <fa:IconImage Icon="WindowClose" Foreground="#F3E8DF"/>
             </Button>  
         </StackPanel>
-        
-        <!--Title-->
-        <TextBlock FontFamily="Courier New" FontWeight="Light" Foreground="#F1F0E4" FontSize="30" HorizontalAlignment="Center">Library</TextBlock>
         
     </StackPanel>
     

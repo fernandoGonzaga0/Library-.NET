@@ -27,7 +27,7 @@
                                     <RepeatButton Command="ScrollBar.LineDownCommand" Visibility="Collapsed"/>
                                 </Track.IncreaseRepeatButton>
                                 <Track.Thumb>
-                                    <Thumb MinHeight="500">
+                                    <Thumb>
                                         <Thumb.Style>
                                             <Style TargetType="Thumb">
                                                 <Setter Property="Background" Value="#FF888888"/>
@@ -54,8 +54,10 @@
     <Grid>
 
         <ListView ItemsSource="{Binding BooksCollection}" ScrollViewer.ScrollChanged="ListView_ScrollChanged" 
+          ScrollViewer.VerticalScrollBarVisibility="Auto"
+          ScrollViewer.CanContentScroll="True"
                   Background="Transparent" BorderThickness="0"
-                  VerticalAlignment="Center" Margin="30 0 40 20">
+                  Margin="30 0 40 20">
 
             <!--Alterando os recursos padrão de componentes da ListView-->
             <ListView.Resources>

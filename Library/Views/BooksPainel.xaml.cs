@@ -9,6 +9,7 @@ namespace Library.Views
     /// </summary>
     public partial class BooksPainel : UserControl
     {
+        private bool _isLoadingNextPage;
         public BooksPainel()
         {
             InitializeComponent();
@@ -16,13 +17,21 @@ namespace Library.Views
 
         private void ListView_ScrollChanged(object sender, ScrollChangedEventArgs e)
         {
-            var scrollViewer = e.OriginalSource as ScrollViewer;
+            // reage apenas quando houver scroll para baixo
+            if (e.VerticalChange <= 0) return;
 
-            // quando o user se aproxima do fim da fila, carrega mais livros
-            if (scrollViewer.VerticalOffset >= scrollViewer.ScrollableHeight - 50)
+            // quando estiver perto do fim, ajuste o thresold se necessário
+            if (e.VerticalOffset + e.ViewportHeight >= e.ExtentHeight - 1)
             {
-                var vm = DataContext as BooksViewModel;
-                vm?.LoadNextPage();
+                if (_isLoadingNextPage) return;
+                _isLoadingNextPage = true;
+
+                if (DataContext is BooksViewModel vm)
+                {
+                    vm.LoadNextPage();
+                }
+
+                _isLoadingNextPage = false;
             }
         }
     }

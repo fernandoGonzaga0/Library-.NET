@@ -8,19 +8,56 @@
              mc:Ignorable="d" 
              MinHeight="70" MinWidth="1030" Background="Transparent">
 
+    <!--Configuração da aparência e triggers dos botões de controle da tela-->
+    <UserControl.Resources>
+        <Style TargetType="Button" x:Key="CustomButtom">
+            
+            <!--Aparêcia padrão-->
+            <Setter Property="Width" Value="25"/>
+            <Setter Property="Height" Value="45"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#F3E8DF"/>
+            <Setter Property="Margin" Value="0 0 10 0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border" Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}" CornerRadius="4"
+                                SnapsToDevicePixels="True">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"
+                                              RecognizesAccessKey="True"/>
+
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="#000000"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                        
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
     <StackPanel>
 
         <!--Buttons-->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Height="40" Margin="0 5 10 0">
-            <Button x:Name="btnMinimize" Width="45" Height="35" Background="Transparent" BorderBrush="Transparent" Click="btnMinimize_Click" Margin="0 0 10 0">
-                <fa:IconImage Icon="WindowMinimize" Foreground="#F3E8DF"/>
+            
+            <Button Style="{StaticResource CustomButtom}" x:Name="btnMinimize" Click="btnMinimize_Click" Margin="0 0 10 0">
+                <fa:IconImage Icon="WindowMinimize" Foreground="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}"/>
             </Button>
-            <Button x:Name="btnMaximize" Width="45" Height="35" Background="Transparent" BorderBrush="Transparent" Click="btnMaximize_Click" Margin="0 0 10 0">
-                <fa:IconImage Icon="WindowMaximize" Foreground="#F3E8DF"/>
+            <Button Style="{StaticResource CustomButtom}" x:Name="btnMaximize" Click="btnMaximize_Click" Margin="0 0 10 0">
+                <fa:IconImage Icon="WindowMaximize" Foreground="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}"/>
             </Button>
-            <Button x:Name="btnClose" Width="45" Height="35" Background="Transparent" BorderBrush="Transparent" Click="btnClose_Click" Margin="0 0 10 0">
-                <fa:IconImage Icon="WindowClose" Foreground="#F3E8DF"/>
+            <Button Style="{StaticResource CustomButtom}" x:Name="btnClose" Click="btnClose_Click" Margin="0 0 10 0">
+                <fa:IconImage Icon="WindowClose" Foreground="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}" />
             </Button>  
+            
         </StackPanel>
         
     </StackPanel>

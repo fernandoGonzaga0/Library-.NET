@@ -14,7 +14,6 @@
         <Style TargetType="ScrollBar" x:Key="ScrollBarBooksPainel">
             <Setter Property="Width" Value="8"/>
             <Setter Property="Margin" Value="0 0 10 0"/>
-            <Setter Property="Background" Value="#E8D1C5"/>
             <Setter Property="Template"> <!--alterando o molde padrão de scrollbar-->
                 <Setter.Value>
                     <ControlTemplate TargetType="ScrollBar">
@@ -30,10 +29,10 @@
                                     <Thumb>
                                         <Thumb.Style>
                                             <Style TargetType="Thumb">
-                                                <Setter Property="Background" Value="#FF888888"/>
+                                                <Setter Property="Background" Value="#F3E8DF"/>
                                                 <Style.Triggers>
                                                     <Trigger Property="IsMouseOver" Value="True">
-                                                        <Setter Property="Background" Value="#FF444444"/>
+                                                        <Setter Property="Background" Value="#320261"/>
                                                     </Trigger>
                                                 </Style.Triggers>
                                             </Style>
@@ -51,15 +50,23 @@
 
     </UserControl.Resources>
 
-    <Grid>
+    <Border Padding="30" CornerRadius="50" BorderThickness="5" Margin="0 0 30 0">
 
-        <ListView ItemsSource="{Binding BooksCollection}" ScrollViewer.ScrollChanged="ListView_ScrollChanged" 
-          ScrollViewer.VerticalScrollBarVisibility="Auto"
-          ScrollViewer.CanContentScroll="True"
-                  Background="Transparent" BorderThickness="0"
-                  Margin="30 0 40 20">
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,0.8">
+                <GradientStop Color="#120261" Offset="0"/>
+                <GradientStop Color="#13003d" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.Background>
 
-            <!--Alterando os recursos padrão de componentes da ListView-->
+        <Grid>
+
+            <ListView ItemsSource="{Binding BooksCollection}" ScrollViewer.ScrollChanged="ListView_ScrollChanged" 
+              ScrollViewer.VerticalScrollBarVisibility="Auto"
+              ScrollViewer.CanContentScroll="True" Padding="10"
+              Background="Transparent" BorderThickness="0">
+
+                <!--Alterando os recursos padrão de componentes da ListView-->
             <ListView.Resources>
                 <Style TargetType="ScrollBar" BasedOn="{StaticResource ScrollBarBooksPainel}"/>
             </ListView.Resources>
@@ -125,6 +132,8 @@
 
         </ListView>
 
-    </Grid>
+        </Grid>       
+    </Border>
+
 
 </UserControl>

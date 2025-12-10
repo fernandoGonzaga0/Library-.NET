@@ -15,23 +15,36 @@
 
     <!--Retirando espaços brancos restantes na barra inicial-->
     <WindowChrome.WindowChrome>
-        <WindowChrome GlassFrameThickness="0" CornerRadius="0" CaptionHeight="0" ResizeBorderThickness="5"/>
+        <WindowChrome GlassFrameThickness="0" CaptionHeight="0" ResizeBorderThickness="5"/>
     </WindowChrome.WindowChrome>
 
-    <Grid>
+    <Border CornerRadius="40" BorderThickness="2" Padding="10">
 
-        <!--Colunas-->
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="250"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
+        <Border.Background>
+            <LinearGradientBrush StartPoint="1,1" EndPoint="0,0">
+                <GradientStop Color="#00002b" Offset="0"/>
+                <GradientStop Color="#00002b" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.Background>
 
-        <!--Coluna 0 (SideBar)-->
-        
-        <views:SideBar Grid.Column="0"/>
-        
-        <views:MainMenu Grid.Column="1"/>
-        
-    </Grid>
+        <Grid>
+
+            <!--Colunas-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Coluna 0 (SideBar)-->
+
+            <views:SideBar Grid.Column="0"/>
+
+            <views:MainMenu Grid.Column="1"/>
+
+        </Grid>
+
+    </Border>
+
+
 
 </Window>

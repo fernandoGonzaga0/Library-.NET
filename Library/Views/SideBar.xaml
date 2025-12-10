@@ -6,15 +6,45 @@
              xmlns:local="clr-namespace:Library.Views"
              xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
              mc:Ignorable="d" 
-             d:DesignHeight="740" d:DesignWidth="250">
+             d:DesignHeight="740" d:DesignWidth="150">
 
-    <Border CornerRadius="40 0 0 40">
+    <UserControl.Resources>
 
-        <!--Estilo da coluna-->
+        <Style TargetType="Button" x:Key="SideBarButtons">
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+    <Setter.Value>
+        <ControlTemplate TargetType="Button">
+            <Border x:Name="border" Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}" CornerRadius="4"
+                    SnapsToDevicePixels="True">     
+                <ContentPresenter HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"
+                                  RecognizesAccessKey="True"/>
+
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Foreground" Value="#F3E8DF"/>
+                    <Setter Property="Background" Value="#320261"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </Setter.Value>
+</Setter>
+
+        </Style>
+        
+    </UserControl.Resources>
+
+    <Border CornerRadius="30" Margin="30">
+
         <Border.Background>
-            <LinearGradientBrush StartPoint="0.9,0.4" EndPoint="1,1">
-                <GradientStop Color="#181C14" Offset="0"/>
-                <GradientStop Color="#581C14" Offset="1"/>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,0.8">
+                <GradientStop Color="#120261" Offset="0"/>
+                <GradientStop Color="#13003d" Offset="1"/>
             </LinearGradientBrush>
         </Border.Background>
 
@@ -27,42 +57,36 @@
                     <Border.Background>
                         <LinearGradientBrush StartPoint="0,0" EndPoint="1, 2">
                             <GradientStop Color="#F3E8DF" Offset="0"/>
-                            <GradientStop Color="#fff" Offset="1"/>
+                            <GradientStop Color="#ffffff" Offset="1"/>
                         </LinearGradientBrush>
                     </Border.Background>
                     <TextBlock Text="FG" FontSize="25" TextAlignment="Center" VerticalAlignment="Center" 
-                               FontFamily="Candara" Foreground="#3C2A21" FontWeight="SemiBold" Margin="3 0 0 2"/>
+                               FontFamily="Candara" Foreground="#000000" FontWeight="SemiBold" Margin="3 0 0 2"/>
                 </Border>
 
             </StackPanel>
 
-            <Separator Height="0.8" Margin="20 30" Background="#D6BD98"/>
+            <Separator Height="1" Margin="20 30" Background="#F3E8DF"/>
 
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
 
                 <!--Botão Favorites-->
-                <Button Width="200" Margin="0 150 0 0" BorderThickness="0" Background="#57595B" Padding="10">
+                <Button Margin="0 150 0 0" Style="{StaticResource SideBarButtons}">
                     <StackPanel Orientation="Horizontal">
-                        <Border>
-                            <TextBlock Text="Favorites" FontFamily="Courier New" Foreground="#F3E8DF" FontSize="25"/>
-                        </Border>
-                        <fa:IconImage Icon="HeartCircleCheck" Width="40" Height="20" Foreground="#F3E8DF" Margin="10 0 0 0"/>
+                        <fa:IconImage Icon="HeartCircleCheck" Width="50" Height="40" Foreground="#F3E8DF"/>
                     </StackPanel>
                 </Button>
 
                 <!--Botão Already Read-->
-                <Button Width="200" Margin="0 70 0 0" BorderThickness="0" Background="#57595B" Padding="10">
+                <Button Margin="0 70 0 0" Style="{StaticResource SideBarButtons}">
                     <StackPanel Orientation="Horizontal">
-                        <Border>
-                            <TextBlock Text="Read" FontFamily="Courier New" Foreground="#F3E8DF" FontSize="25"/>
-                        </Border>
-                        <fa:IconImage Icon="CheckToSlot" Width="40" Height="20" Foreground="#F3E8DF" Margin="10 0 0 0"/>
+                        <fa:IconImage Icon="CheckToSlot" Width="50" Height="40" Foreground="#F3E8DF" Margin="10 0 0 0"/>
                     </StackPanel>
                 </Button>
 
                 <!--Footer SideBar-->
-                <StackPanel Margin="40 260 40 0" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <TextBlock Text="@fernandoDev" FontFamily="Candara" Foreground="#F3E8DF" FontSize="15"/>
+                <StackPanel Margin="0 180 0 0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="@fernandoDev" FontFamily="Candara" Foreground="#F3E8DF" FontSize="12"/>
                 </StackPanel>
 
             </StackPanel>

@@ -10,6 +10,7 @@
 
     <!--Configuração da aparência e triggers dos botões de controle da tela-->
     <UserControl.Resources>
+        
         <Style TargetType="Button" x:Key="CustomButtom">
             
             <!--Aparêcia padrão-->
@@ -33,7 +34,7 @@
 
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Foreground" Value="#000000"/>
+                                <Setter Property="Foreground" Value="#320261"/>
                             </Trigger>
                         </ControlTemplate.Triggers>
                         

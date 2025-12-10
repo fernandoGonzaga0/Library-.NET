@@ -8,24 +8,55 @@
              mc:Ignorable="d" 
              MinHeight="100" MinWidth="1030">
 
+    <UserControl.Resources>
+
+        <Style TargetType="Button" x:Key="OkButton">
+            <Setter Property="FontFamily" Value="Courier New"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border" Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}" CornerRadius="4"
+                                SnapsToDevicePixels="True">     
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"
+                                              RecognizesAccessKey="True"/>
+
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="#F3E8DF"/>
+                                <Setter Property="Background" Value="#320261"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+    </UserControl.Resources>
+
     <Grid>
 
         <!--Input e botão OK-->
         <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center">
 
-            <Border Height="40" Width="550" Margin="30 0 10 0"
+            <Border Height="40" Width="400" Margin="30 0 10 0"
                     CornerRadius="10" Background="#F3E8DF">
-                <TextBox Height="40" Width="350" FontFamily="Courier New"
-                    BorderThickness="0" FontSize="20"
+                <TextBox Height="40" Width="400" FontFamily="Courier New"
+                    BorderThickness="0" FontSize="20" FontWeight="Medium"
                     Background="Transparent" Foreground="Black"
                     VerticalAlignment="Center" VerticalContentAlignment="Center"
                     HorizontalAlignment="Left" HorizontalContentAlignment="Left"/>
             </Border>
 
             <Border Width="50" Height="40" 
-                    CornerRadius="10"  Background="#57595B">
-                <Button Content="OK" FontFamily="Courier New" FontSize="20"
-                    Background="Transparent" Foreground="#F3E8DF" BorderThickness="0" x:Name="Ok_Button" Click="Ok_Button_Click"/>
+                    CornerRadius="10"  Background="#F3E8DF">
+                <Button Content="OK" x:Name="Ok_Button" Click="Ok_Button_Click" Style="{StaticResource OkButton}"/>
             </Border>
 
         </StackPanel>

@@ -11,9 +11,6 @@
 
         <Grid>
 
-            <Image Source="pack://application:,,,/Library;component/Resources/backgroundMainMenu.jpg"
-                   Stretch="UniformToFill"/>
-
             <!--4 linhas designadas-->
             <Grid Panel.ZIndex="1">
 

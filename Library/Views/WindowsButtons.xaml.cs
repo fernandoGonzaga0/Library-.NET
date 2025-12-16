@@ -1,22 +1,23 @@
-﻿using System.Windows;
+﻿// Esse arquivo possui os botões de controle da página: minimizar, máximizar e fechar.
+
+
+using System.Windows;
 using System.Windows.Controls;
 
 namespace Library.Views
 {
-    /// <summary>
-    /// Interaction logic for WindowsButtons.xaml
-    /// </summary>
     public partial class WindowsButtons : UserControl
     {
+        // CONSTRUTOR
+
         public WindowsButtons()
         {
             InitializeComponent();
         }
 
-        /*
-        Adicionando funcionalidade nos botões. Será necessário chamar a janela por extenso, visto que o userControl não consegue se fechar. 
-        */
-        private void btnMinimize_Click(object sender, RoutedEventArgs e)
+        // MÉTODOS
+
+        private void btnMinimize_Click(object sender, RoutedEventArgs e) // Adicionando funcionalidade nos botões. Será necessário chamar a janela por extenso, visto que o userControl não consegue se fechar. 
         {
             // minimizando a janela
             Application.Current.MainWindow.WindowState = WindowState.Minimized;

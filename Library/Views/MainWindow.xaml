@@ -6,12 +6,17 @@
         xmlns:local="clr-namespace:Library"
         xmlns:userControls="clr-namespace:Library.Views"
         xmlns:views="clr-namespace:Library.Views"
+        xmlns:vm="clr-namespace:Library.ViewModel"
         mc:Ignorable="d"
         Title="MainWindow"
         Width="1280" Height="740"
         WindowStartupLocation="CenterScreen" WindowStyle="None" 
         AllowsTransparency="True" Background="Transparent"
         MouseLeftButtonDown="Window_MouseLeftButtonDown">
+
+    <Window.DataContext>
+        <vm:BooksViewModel/>
+    </Window.DataContext>
 
     <!--Retirando espaços brancos restantes na barra inicial-->
     <WindowChrome.WindowChrome>
@@ -21,9 +26,9 @@
     <Border CornerRadius="40" BorderThickness="2" Padding="10">
 
         <Border.Background>
-            <LinearGradientBrush StartPoint="1,1" EndPoint="0,0">
-                <GradientStop Color="#00002b" Offset="0"/>
-                <GradientStop Color="#00002b" Offset="1"/>
+            <LinearGradientBrush StartPoint="0,1" EndPoint="0,0">
+                <GradientStop Color="#ECDFCC" Offset="0"/>
+                <GradientStop Color="#3C3D37" Offset="1"/>
             </LinearGradientBrush>
         </Border.Background>
 

@@ -28,8 +28,10 @@
             <ControlTemplate.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="Foreground" Value="#F3E8DF"/>
-                    <Setter Property="Background" Value="#320261"/>
-                </Trigger>
+                    <Setter Property="Background" Value="#aaaaaa"/>
+                    <Setter Property="Width" Value="50"/>
+                    <Setter Property="Height" Value="40"/>
+                            </Trigger>
             </ControlTemplate.Triggers>
         </ControlTemplate>
     </Setter.Value>
@@ -43,8 +45,8 @@
 
         <Border.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="0,0.8">
-                <GradientStop Color="#120261" Offset="0"/>
-                <GradientStop Color="#13003d" Offset="1"/>
+                <GradientStop Color="#000000" Offset="0"/>
+                <GradientStop Color="#000000" Offset="1"/>
             </LinearGradientBrush>
         </Border.Background>
 
@@ -70,17 +72,21 @@
 
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
 
-                <!--Botão Favorites-->
-                <Button Margin="0 150 0 0" Style="{StaticResource SideBarButtons}">
+                <!--Botão GitHub-->
+                <Button Margin="0 150 0 0" Style="{StaticResource SideBarButtons}"
+                        x:Name="Btn_GitHub" Click="Btn_GitHub_Click"
+                        Cursor="Hand">
                     <StackPanel Orientation="Horizontal">
-                        <fa:IconImage Icon="HeartCircleCheck" Width="50" Height="40" Foreground="#F3E8DF"/>
+                        <fa:IconImage Icon="Github" Width="50" Height="40" Foreground="#F3E8DF"/>
                     </StackPanel>
                 </Button>
 
-                <!--Botão Already Read-->
-                <Button Margin="0 70 0 0" Style="{StaticResource SideBarButtons}">
+                <!--Botão Linkedln-->
+                <Button Margin="0 70 0 0" Style="{StaticResource SideBarButtons}"
+                        x:Name="Btn_Linkedln" Click="Btn_Linkedln_Click"
+                        Cursor="Hand">
                     <StackPanel Orientation="Horizontal">
-                        <fa:IconImage Icon="CheckToSlot" Width="50" Height="40" Foreground="#F3E8DF" Margin="10 0 0 0"/>
+                        <fa:IconImage Icon="Linkedin" Width="50" Height="40" Foreground="#F3E8DF"/>
                     </StackPanel>
                 </Button>
 

@@ -32,7 +32,7 @@
                                                 <Setter Property="Background" Value="#F3E8DF"/>
                                                 <Style.Triggers>
                                                     <Trigger Property="IsMouseOver" Value="True">
-                                                        <Setter Property="Background" Value="#320261"/>
+                                                        <Setter Property="Background" Value="#000000"/>
                                                     </Trigger>
                                                 </Style.Triggers>
                                             </Style>
@@ -53,15 +53,15 @@
     <Border Padding="30" CornerRadius="50" BorderThickness="5" Margin="0 0 30 0">
 
         <Border.Background>
-            <LinearGradientBrush StartPoint="0,0" EndPoint="0,0.8">
-                <GradientStop Color="#120261" Offset="0"/>
-                <GradientStop Color="#13003d" Offset="1"/>
+            <LinearGradientBrush StartPoint="0,1" EndPoint="0,0">
+                <GradientStop Color="#000000" Offset="0"/>
+                <GradientStop Color="#333333" Offset="1"/>
             </LinearGradientBrush>
         </Border.Background>
 
         <Grid>
 
-            <ListView ItemsSource="{Binding BooksCollection}" ScrollViewer.ScrollChanged="ListView_ScrollChanged" 
+            <ListView ItemsSource="{Binding FilteredBooks}" ScrollViewer.ScrollChanged="ListView_ScrollChanged" 
               ScrollViewer.VerticalScrollBarVisibility="Auto"
               ScrollViewer.CanContentScroll="True" Padding="10"
               Background="Transparent" BorderThickness="0">

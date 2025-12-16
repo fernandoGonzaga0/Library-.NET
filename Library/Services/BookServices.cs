@@ -1,15 +1,16 @@
-﻿using System.IO; // permite manipular arquivos e caminhos
-using Library.Models;
+﻿// Esse será o módulo responsável somente pela leitura do CSV, converter cada linha em um objeto Livro, devolver uma lista de Livro pronta para ser usada em ViewModel.
 
-// Esse será o módulo responsável somente pela leitura do CSV, converter cada linha em um objeto Livro, devolver uma lista de Livro pronta para ser usada em ViewModel.
+using System.IO; // permite manipular arquivos e caminhos
+using Library.Models;
 
 namespace BookServiceNamespace
 {
     public class BookService
     {
-        // fazendo com que o programa procure o arquivo books.csv 
-        // * para fazer com que o arquivo seja encontrado, clicar com o botão direito o csv e seguir Properties -> Copy to Output Directory -> Copy if newer
-        private readonly string _filePath = Path.Combine(AppContext.BaseDirectory, "Data", "books_cleaned.csv");
+        // PROPRIEDADES
+
+        private readonly string _filePath = Path.Combine(AppContext.BaseDirectory, "Data", "books_cleaned.csv"); // fazendo com que o programa procure o arquivo books.csv * para fazer com que o arquivo seja encontrado, clicar com o botão direito o csv e seguir Properties -> Copy to Output Directory -> Copy if newer
+
         public List<Books> LoadBooks() // método que será chamado pelo ViewModel posteriormente
         {
             var books = new List<Books>(); // lista vazia por enquanto, será preenchida com os livros lidos do CSV
@@ -20,7 +21,7 @@ namespace BookServiceNamespace
             {
                 var columns = rows[i].Split(';'); // separando as rows por ;
 
-                if (columns.Length != 7) continue; // se tiver menos ou mais que 12 colunas, pula o livro e descarta
+                if (columns.Length != 7) continue; // se tiver menos ou mais que 7 colunas, pula o livro e descarta
 
                 // validando os int 
                 if (!int.TryParse(columns[0], out var id)) continue;
@@ -38,7 +39,8 @@ namespace BookServiceNamespace
                 string.IsNullOrWhiteSpace(thumbnail))
                 continue;
 
-                var book = new Books // selecionando apenas as colunas que desejo
+                // selecionando apenas as colunas que desejo
+                var book = new Books 
                 {
                     /*
                         0 -> id

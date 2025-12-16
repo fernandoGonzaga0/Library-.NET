@@ -21,7 +21,7 @@
                     <ControlTemplate TargetType="Button">
                         <Border x:Name="border" Background="{TemplateBinding Background}"
                                 BorderBrush="{TemplateBinding BorderBrush}" CornerRadius="4"
-                                SnapsToDevicePixels="True">     
+                                SnapsToDevicePixels="True">
                             <ContentPresenter HorizontalAlignment="Center"
                                               VerticalAlignment="Center"
                                               RecognizesAccessKey="True"/>
@@ -30,37 +30,51 @@
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
                                 <Setter Property="Foreground" Value="#F3E8DF"/>
-                                <Setter Property="Background" Value="#320261"/>
+                                <Setter Property="Background" Value="#aaaaaa"/>
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
         </Style>
-        
+
     </UserControl.Resources>
 
     <Grid>
 
-        <!--Input e botão OK-->
-        <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
-            <Border Height="40" Width="400" Margin="30 0 10 0"
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <fa:IconImage Icon="BookOpen" Foreground="#F3E8DF" Height="30" Margin="0 0 10 0"/>
+            <TextBlock Text="Library" Foreground="#F3E8DF" VerticalAlignment="Center" FontSize="25" FontFamily="Courier New"/>
+        </StackPanel>
+
+        <!--Input e botão OK-->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0 0 0 10">
+
+            <Border Height="30" Width="500" Margin="0 0 10 0"
                     CornerRadius="10" Background="#F3E8DF">
-                <TextBox Height="40" Width="400" FontFamily="Courier New"
+                <TextBox Height="30" Width="500" FontFamily="Courier New"
                     BorderThickness="0" FontSize="20" FontWeight="Medium"
-                    Background="Transparent" Foreground="Black"
+                    Background="Transparent" Foreground="#000000"
                     VerticalAlignment="Center" VerticalContentAlignment="Center"
-                    HorizontalAlignment="Left" HorizontalContentAlignment="Left"/>
+                    HorizontalAlignment="Left" HorizontalContentAlignment="Left"
+                    Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                    />
             </Border>
 
-            <Border Width="50" Height="40" 
+            <Border Height="30"  Width="50"
                     CornerRadius="10"  Background="#F3E8DF">
-                <Button Content="OK" x:Name="Ok_Button" Click="Ok_Button_Click" Style="{StaticResource OkButton}"/>
+                <Button Content="OK" x:Name="Ok_Button" 
+                       Command="{Binding SearchCommand}" Style="{StaticResource OkButton}" 
+                        FontFamily="Constantia" FontSize="20"/>
             </Border>
 
         </StackPanel>
 
     </Grid>
-    
+
 </UserControl>

@@ -1,21 +1,26 @@
-﻿using Library.ViewModel;
-using System.Windows.Controls;
+﻿// Nesse arquivo controlaremos a rolagem infinita do user pela ScrollBar
 
+using Library.ViewModel;
+using System.Windows.Controls;
 
 namespace Library.Views
 {
-    /// <summary>
-    /// Interaction logic for BooksPainel.xaml
-    /// </summary>
     public partial class BooksPainel : UserControl
     {
+        // CAMPOS
+
         private bool _isLoadingNextPage;
+
+        // CONSTRUTORE
+
         public BooksPainel()
         {
             InitializeComponent();
         }
 
-        private void ListView_ScrollChanged(object sender, ScrollChangedEventArgs e)
+        // MÉTODO
+
+        private void ListView_ScrollChanged(object sender, ScrollChangedEventArgs e) // configurando o comportamento da scrollbar em BooksPainel
         {
             // reage apenas quando houver scroll para baixo
             if (e.VerticalChange <= 0) return;

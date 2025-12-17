@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Library.Views"
              xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
              mc:Ignorable="d" 
-             MinHeight="100" MinWidth="1030">
+             MinHeight="50" MinWidth="1030">
 
     <UserControl.Resources>
 
@@ -41,29 +41,17 @@
     </UserControl.Resources>
 
     <Grid>
-
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-
-        <StackPanel Grid.Row="0" Orientation="Horizontal">
-            <fa:IconImage Icon="BookOpen" Foreground="#F3E8DF" Height="30" Margin="0 0 10 0"/>
-            <TextBlock Text="Library" Foreground="#F3E8DF" VerticalAlignment="Center" FontSize="25" FontFamily="Courier New"/>
-        </StackPanel>
-
         <!--Input e botão OK-->
-        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0 0 0 10">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0 0 0 10">
 
             <Border Height="30" Width="500" Margin="0 0 10 0"
                     CornerRadius="10" Background="#F3E8DF">
                 <TextBox Height="30" Width="500" FontFamily="Courier New"
-                    BorderThickness="0" FontSize="20" FontWeight="Medium"
-                    Background="Transparent" Foreground="#000000"
-                    VerticalAlignment="Center" VerticalContentAlignment="Center"
-                    HorizontalAlignment="Left" HorizontalContentAlignment="Left"
-                    Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
-                    />
+                        BorderThickness="0" FontSize="20" FontWeight="Medium"
+                        Background="Transparent" Foreground="#000000"
+                        VerticalAlignment="Center" VerticalContentAlignment="Center"
+                        HorizontalAlignment="Left" HorizontalContentAlignment="Left"
+                        Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
             </Border>
 
             <Border Height="30"  Width="50"

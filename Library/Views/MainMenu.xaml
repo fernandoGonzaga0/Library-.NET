@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="740" d:DesignWidth="1030">
 
-    <Border CornerRadius="0 40 40 0" BorderThickness="0">
+    <Border BorderThickness="0">
 
         <Grid>
 
@@ -16,7 +16,7 @@
 
                 <Grid.RowDefinitions>
                     <RowDefinition Height="60"/>
-                    <RowDefinition Height="130"/>
+                    <RowDefinition Height="70"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 

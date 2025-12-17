@@ -50,12 +50,12 @@
 
     </UserControl.Resources>
 
-    <Border Padding="30" CornerRadius="50" BorderThickness="5" Margin="0 0 30 0">
+    <Border Padding="15" CornerRadius="50" BorderThickness="5" Margin="0 0 30 0">
 
         <Border.Background>
             <LinearGradientBrush StartPoint="0,1" EndPoint="0,0">
                 <GradientStop Color="#000000" Offset="0"/>
-                <GradientStop Color="#333333" Offset="1"/>
+                <GradientStop Color="#00000a" Offset="1"/>
             </LinearGradientBrush>
         </Border.Background>
 

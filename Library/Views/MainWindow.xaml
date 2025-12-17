@@ -23,7 +23,7 @@
         <WindowChrome GlassFrameThickness="0" CaptionHeight="0" ResizeBorderThickness="5"/>
     </WindowChrome.WindowChrome>
 
-    <Border CornerRadius="40" BorderThickness="2" Padding="10">
+    <Border CornerRadius="20" BorderThickness="2" Padding="10">
 
         <Border.Background>
             <LinearGradientBrush StartPoint="0,1" EndPoint="0,0">

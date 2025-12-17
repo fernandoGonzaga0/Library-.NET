@@ -20,7 +20,7 @@ Classe responsável por conectar a interface do usuário (XAML) com os dados dos
         Fornece dados para a ListView exibir os livros
         Notifica automaticamente a interface quando os dados mudam (via INotifyPropertyChanged)
         Disponibiliza o comando para o botão OK da busca
- 
+
 */
 
 using System.Collections.ObjectModel;
@@ -87,6 +87,7 @@ public class BooksViewModel : INotifyPropertyChanged
             
             if (_searchText.Length == 0) // filtrando automaticamente quando o input estiver vazio, com isso evitamos que o user tenha que apagar o input e clicar em enter
             {
+            
             FilterBooks();
             }
         }

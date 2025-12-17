@@ -41,7 +41,7 @@
         
     </UserControl.Resources>
 
-    <Border CornerRadius="30" Margin="30">
+    <Border CornerRadius="30" Margin="30 20 30 0">
 
         <Border.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="0,0.8">

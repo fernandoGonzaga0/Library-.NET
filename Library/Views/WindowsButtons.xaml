@@ -44,10 +44,15 @@
         </Style>
     </UserControl.Resources>
 
-    <StackPanel>
+    <StackPanel Orientation="Horizontal">
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+            <fa:IconImage Icon="BookOpen" Foreground="#F3E8DF" Height="30" Margin="0 0 10 0"/>
+            <TextBlock Text="Library" Foreground="#F3E8DF" VerticalAlignment="Center" FontSize="25" FontFamily="Courier New"/>
+        </StackPanel>
 
         <!--Buttons-->
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Height="40" Margin="0 5 10 0">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Height="40" Margin="800 5 10 0">
             
             <Button Style="{StaticResource CustomButtom}" x:Name="btnMinimize" Click="btnMinimize_Click" Margin="0 0 10 0">
                 <fa:IconImage Icon="WindowMinimize" Foreground="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}"/>

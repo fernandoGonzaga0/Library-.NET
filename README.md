@@ -54,4 +54,30 @@ LibraryApp/
 
 ## Dados utilizados
 
-<p>Para dados, gerei </p>
+<p>Sobre os dados dos livros, utilizei o chat da IA DeepSeek com a ferramenta DeepThink (botão na parte inferior do chat na plataforma) para gerar as informações de 397 livros aleatórios contendo os seguintes campos: ID (iniciando em 1), título, autor, categoria, thumbnail, ano de publicação, número de páginas.</p>
+
+<p>Os dados foram armazenados em um arquivo CSV na pasta Data, nomeado books_cleaned.csv.</p>
+
+## Como executar
+
+### Pré-requisitos
+
+  - [.NET 9.0 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
+  - Windows 10/11
+  - Visual Studio 2022 ou VS Code
+
+### Passos
+
+  - 1) Clone o repositório
+    ```bash
+    git clone https://github.com/seu-usuario/library-app.git
+    ```
+    
+  - 2) Navegue até a pasta do projeto
+     ```bash
+     cd library-app
+     ```
+  - 3) Restaure as dependências
+      ```bash
+      dotnet restore
+      ```

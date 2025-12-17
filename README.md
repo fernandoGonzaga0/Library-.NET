@@ -90,6 +90,7 @@ LibraryApp/
 ## Autor
 
 <p>Desenvolvido por Fernando Gonzaga.</p>
+
   - GitHub: https://github.com/fernandoGonzaga0
   - Linkedln: https://www.linkedin.com/in/fernando-gonzaga21/
   

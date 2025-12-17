@@ -83,5 +83,13 @@ LibraryApp/
       ```
   - 4) Execute a aplicação (F5 ou 'dotnet run' no terminal da aplicação)
    
-## Funcionalidades Técnicas
+## Licença 
+
+<p>Distribuído sob licença MIT.</p>
+
+## Autor
+
+<p>Desenvolvido por Fernando Gonzaga.</p>
+  - GitHub: https://github.com/fernandoGonzaga0
+  - Linkedln: https://www.linkedin.com/in/fernando-gonzaga21/
   

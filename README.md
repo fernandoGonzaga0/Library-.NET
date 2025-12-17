@@ -81,3 +81,7 @@ LibraryApp/
       ```bash
       dotnet restore
       ```
+  - 4) Execute a aplicação (F5 ou 'dotnet run' no terminal da aplicação)
+   
+## Funcionalidades Técnicas
+  
